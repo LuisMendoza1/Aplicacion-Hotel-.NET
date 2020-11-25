@@ -1,0 +1,71 @@
+@model TeamCatHotel.Models.Reserva
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Reserva</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="idReserva" />
+        <div class="form-group">
+            <label asp-for="comentarios" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="comentarios" class="form-control" />
+                <span asp-validation-for="comentarios" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="estado" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="estado" class="form-control" />
+                <span asp-validation-for="estado" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaFin" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaFin" class="form-control" />
+                <span asp-validation-for="fechaFin" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaInicio" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaInicio" class="form-control" />
+                <span asp-validation-for="fechaInicio" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaRealizacion" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaRealizacion" class="form-control" />
+                <span asp-validation-for="fechaRealizacion" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="regimenComida" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="regimenComida" class="form-control" />
+                <span asp-validation-for="regimenComida" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

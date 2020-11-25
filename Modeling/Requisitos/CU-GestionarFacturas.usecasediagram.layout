@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CU-GestionarFacturas">
+  <useCaseModelRootMoniker Id="d8915e1c-511b-473a-a0e1-92cc9342948e" />
+  <nestedChildShapes>
+    <useCaseShape Id="01617c8d-9df5-4c44-bd06-27a779f9e567" absoluteBounds="4.375, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="0047b2b6-0fc9-4780-9ec9-2c9c6bd41c84" LastKnownName="Cursar Factura" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="8979f65f-085d-4a90-9340-9f8e636729ee" absoluteBounds="2.5, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="917ca96d-9ade-486c-b3f7-33adcbc1787b" LastKnownName="Buscar Factura" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.375 : 2.25); (3.5 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="aa2dd231-01f0-4c63-b457-4af7f9a6f7a3" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" absoluteBounds="3.735, 1.9419965410232543, 0.61333333333333417, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="01617c8d-9df5-4c44-bd06-27a779f9e567" />
+        <useCaseShapeMoniker Id="8979f65f-085d-4a90-9340-9f8e636729ee" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="6b8217cf-4227-4bd9-95db-fc1bf2e83a24" absoluteBounds="2.5, 2.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3843f8a2-8a34-4efc-9165-98fd3bf80209" LastKnownName="Alta Factura Externa" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="99de5918-5166-4f1d-9bcf-90cc11db164c" absoluteBounds="2.5, 3.75, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b0c14ad0-404c-4770-97ac-56b5bc8e8bcf" LastKnownName="Gestion Pago Factura Externa" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <actorShape Id="07d79869-141d-4961-8347-585aa714520a" absoluteBounds="1, 2, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="7eff2f98-29e1-4613-bef5-3e143168f391" LastKnownName="Recepcionista" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(1.5 : 2.25); (2.5 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="bd4def97-a706-4030-9d5b-5dd20d1841ff" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="07d79869-141d-4961-8347-585aa714520a" />
+        <useCaseShapeMoniker Id="8979f65f-085d-4a90-9340-9f8e636729ee" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <actorShape Id="a93becfa-85d5-410e-88cc-3067264f02ca" absoluteBounds="1.125, 3.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="32d62e85-9379-4b63-ac0f-975ea69471c9" LastKnownName="Encargado de Almacen" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 3.56730769230769); (2.52211049563903 : 3.36028219331407)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a74183c8-96ad-4c41-b0cf-df2a21afacdc" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="a93becfa-85d5-410e-88cc-3067264f02ca" />
+        <useCaseShapeMoniker Id="6b8217cf-4227-4bd9-95db-fc1bf2e83a24" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 3.70192307692308); (2.53741569081263 : 3.98266636640389)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c7e35dae-95f2-42ab-b757-6e4288a5581a" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="a93becfa-85d5-410e-88cc-3067264f02ca" />
+        <useCaseShapeMoniker Id="99de5918-5166-4f1d-9bcf-90cc11db164c" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

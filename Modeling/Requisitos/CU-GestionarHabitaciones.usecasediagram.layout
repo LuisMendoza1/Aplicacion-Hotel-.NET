@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CU-GestionarHabitaciones">
+  <useCaseModelRootMoniker Id="1d778459-1047-4243-8d0a-0c76cf4cb689" />
+  <nestedChildShapes>
+    <actorShape Id="a81616c1-97da-4ab7-88b2-1a71af0ae39e" absoluteBounds="1.375, 2.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="8ca3ae7a-3de3-4a58-9cc4-32b18031910d" LastKnownName="Recepcionista" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="baa4f61d-a729-40ad-99e0-df0f85142631" absoluteBounds="4.375, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4801ff55-072f-402d-9ee2-727e0226918d" LastKnownName="Solicitar Servicios" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="767d57a3-4095-47c0-b452-48b7a1cefcb1" absoluteBounds="2.75, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="84824a98-47f0-4945-8b0a-c9580f351e8c" LastKnownName="Listar Habitaciones" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.375 : 3.375); (3.75 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="196000e7-b5d7-4992-9159-7296ed40ff10" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="3.75, 3.1875, 0.68625000000000025, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="baa4f61d-a729-40ad-99e0-df0f85142631" />
+        <useCaseShapeMoniker Id="767d57a3-4095-47c0-b452-48b7a1cefcb1" />
+      </nodes>
+    </extendConnector>
+    <useCaseAssociationConnector edgePoints="[(1.875 : 2.84615384615385); (2.8536880054477 : 3.22257230978758)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="f17797d1-5e8a-4337-aa9c-4a20bdd2ef90" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="a81616c1-97da-4ab7-88b2-1a71af0ae39e" />
+        <useCaseShapeMoniker Id="767d57a3-4095-47c0-b452-48b7a1cefcb1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="075e3507-cce1-4cd0-8200-4d8b5bebc7ce" absoluteBounds="4.375, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fff58141-b223-4c09-aff6-3dd51032e869" LastKnownName="Modificar Habitación" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.53477445031636 : 2.68319837290657); (3.59022554968364 : 3.19180162709343)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="7759e333-c4ad-449d-8dcb-5ccef7794555" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.375, 2.8125, 0.61212378740310669, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="075e3507-cce1-4cd0-8200-4d8b5bebc7ce" />
+        <useCaseShapeMoniker Id="767d57a3-4095-47c0-b452-48b7a1cefcb1" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="28c8e02b-d44d-4c06-8068-f2ca2a64e838" absoluteBounds="2.75, 1.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="516bc40f-1ba5-4a30-9cf7-cdb5d21d1387" LastKnownName="Añadir Habitación" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.875 : 2.65384615384615); (2.8536880054477 : 2.27742769021242)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e7a22120-6826-4702-998f-b5f799b32599" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="a81616c1-97da-4ab7-88b2-1a71af0ae39e" />
+        <useCaseShapeMoniker Id="28c8e02b-d44d-4c06-8068-f2ca2a64e838" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="5fe6ef24-2de6-40a4-aee9-a9672083d783" absoluteBounds="4.375, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e7203efa-a55e-4f34-8bc4-9adde491b21b" LastKnownName="Eliminar Habitación" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.53477445031636 : 4.06680162709343); (3.59022554968364 : 3.55819837290657)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="ffb4be6d-44bf-4363-b2ed-19ebd8cd2601" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="5fe6ef24-2de6-40a4-aee9-a9672083d783" />
+        <useCaseShapeMoniker Id="767d57a3-4095-47c0-b452-48b7a1cefcb1" />
+      </nodes>
+    </extendConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

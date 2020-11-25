@@ -1,0 +1,48 @@
+@model TeamCatHotel.Models.Menu
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Menu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.horaInicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.horaInicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.horaFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.horaFin)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idServicio">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,87 @@
+﻿@model TeamCatHotel.Models.PedidoViewModel.ProveedorProductosViewModel
+
+@{
+    ViewData["Title"] = "Seleccionar Productos";
+}
+<br />
+<br />
+<br />
+<h2>Seleccionar Productos</h2>
+<h4>Introdza la cantidad deseada para seleccionar un producto:</h4>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="SelectProductos" method="post">
+    
+    <div class="form-group" hidden="hidden">
+        <input asp-for="idProveedor"/>
+    </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Producto
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                    <th>
+                        Cantidad
+                    </th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+
+                @if (Model.productos.Count() == 0)
+            {
+                    <tr>
+                        <td>
+                            <p>No hay productos disponibles asociados para el proveedor @Model.proveedor.nombre</p>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model.productos)
+                {
+                        <tr>
+                            <td>
+
+                                @Html.DisplayFor(modelItem => item.nombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.precio)
+                            </td>
+                            <td>
+                                <input asp-for="listaCantidades" class="form-control" value="0" />
+
+                            </td>
+                            <td>
+                                <input hidden type="text" name="IdsProductosSeleccionados" value="@item.idProducto">
+                            </td>
+
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+        <div>
+            <span asp-validation-for="listaCantidades" class="text-danger" />
+            <br />
+        </div>
+
+
+        @if (Model.productos.Count() != 0)
+        {
+            <button type="submit" name="boton" class="btn btn-primary" a href="ResumenPedido" target="_self">Ver resumen</button>
+        }
+
+
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

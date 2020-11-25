@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ccbfe0e6-99a6-43cf-8115-c4ad7bfa35c2" name="CU-GestionReservas" linkedPackageId="e191f3f2-0717-4316-977f-b9bddad33cd1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6cdfb7ca-0de1-456a-85c1-592a0a8a87e0" name="Recepcionista" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd16a4d-f4fe-4ca7-9237-416418fa8160" />
+        <targetEnds>
+          <association Id="911d9782-46ea-4142-9f33-c975a7632a05" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Hacer Reserva" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a81cd50f-30b1-4f69-9f6f-c5d045c1a86d" LastKnownName="Hacer Reserva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="464830da-f772-45d4-950d-ba400ab5bffb" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b916e4ef-71af-4799-8bc6-89abbd636972" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87aedb96-c524-4bdd-bf2a-cafb18c7e3b7" name="Hacer Reserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9cdfc628-4525-4da7-a571-1168156d8bad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b33c79a2-f8b0-4128-8ff0-8b5fba504d6f" />
+          </association>
+          <association Id="358b405c-c6b6-4712-9bc6-dd12b2d73488" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Modificar Reserva" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2b2ae625-9756-45d0-ab7a-af9efd857efe" LastKnownName="Modificar Reserva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2058ed63-e097-4d28-84bf-b08d52bc880f" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dddd5ad5-85fb-4fb0-a5e7-399e6e1e0a3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc6d5138-2739-4854-a3da-5f78e91dcd25" name="Modificar Reserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3fc6bbe-9825-4002-98cb-f0352f099f02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d8a2c73d-c8a8-4cf0-938d-7ccdb5b8003e" />
+          </association>
+          <association Id="7049c5ac-3901-41d9-92c3-01da2adffc86" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Eliminar Reserva" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f25df10-b3fe-45d5-bb73-0bf014bcdc35" LastKnownName="Eliminar Reserva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3058ccf-ee21-48a2-9aa2-561fb81221b4" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b60e95f-8d2f-42a2-a329-e8fd3d6cd5c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="957de479-a2fa-4a7d-b808-55a81f84d939" name="Eliminar Reserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="204a977b-c9b5-4433-b480-f5de77364038" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7b91ad8-9b68-4308-a79b-cee143e23b80" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a81cd50f-30b1-4f69-9f6f-c5d045c1a86d" name="Hacer Reserva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dddfccdb-b3b9-45ac-9c1f-bfc74c549db9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2b2ae625-9756-45d0-ab7a-af9efd857efe" name="Modificar Reserva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fe383d6-9c17-4a55-ba5e-766bc55c37a4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8f25df10-b3fe-45d5-bb73-0bf014bcdc35" name="Eliminar Reserva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43d7d9fa-3f3b-47f9-8358-4138f2d9a8ca" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e191f3f2-0717-4316-977f-b9bddad33cd1" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f3080d13-301b-49e8-a10f-383dcb2510f6">
+        <profileInstance Id="86c9c725-251b-422a-bc80-118a380c687f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ecd110e5-7af2-4da8-b46e-ac474a6048c2">
+        <profileInstance Id="bf123cde-cf17-4dd9-bd7c-6ae94bdad13c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

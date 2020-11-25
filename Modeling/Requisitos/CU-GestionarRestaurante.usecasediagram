@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4c0345e6-53ce-44cd-b777-967b7288dafe" name="CU-GestionarRestaurante" linkedPackageId="4a66529e-975f-400e-a09c-9c7ce8d4baa7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="92e681e3-80fc-4b3b-aa7b-78a7d0030e6f" name="Jefe de Cocina" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f6cf6b7-d469-4702-99c4-c5d7c4baaebe" />
+        <targetEnds>
+          <association Id="00ac2753-f44d-4b12-9923-9b142f15977b" isDerived="false" sourceEndRoleName="Jefe de Cocina" targetEndRoleName="Listar comida" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="513d37fa-c7ab-4f64-b2ac-7132bb07f5d5" LastKnownName="Listar Platos" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4ff3cdb5-797f-42ed-9d8b-8556f1e77605" name="Jefe de Cocina" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7952651f-10a0-4f48-b158-53d8be15e728" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="752f031d-6c60-44ad-808e-216bed16989e" name="Listar comida" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb76c988-2c92-4e1e-89e1-2bab393035c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f2f9fb50-2955-45ac-a7f7-4af10eda8f38" />
+          </association>
+          <association Id="8136c3d5-3e03-4751-879a-ab55f8ae83b8" isDerived="false" sourceEndRoleName="Jefe de Cocina" targetEndRoleName="Listar menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2b39e980-31aa-4bb9-8ddc-51a2a827c143" LastKnownName="Listar Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2575177-ab13-4e44-8a79-eb2055fe989a" name="Jefe de Cocina" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c71791e-5584-4d61-92fe-90284fd604d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2aaee5f7-9d02-46cc-a301-d49a6d51bdcd" name="Listar menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5a1d964e-39ea-4945-b433-29c74fcb26c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c2bf367-2e87-4168-b82e-411fecac8dea" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f92b0540-c32c-4dab-97a7-9edbbea58586" name="Alta Plato" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5bba7c0-5088-4387-9a5c-faee24158de2" />
+        <extendedCases>
+          <extend Id="92aa7c12-f6b4-40de-8230-60be52005da6">
+            <useCaseMoniker Id="513d37fa-c7ab-4f64-b2ac-7132bb07f5d5" LastKnownName="Listar Platos" />
+            <elementDefinition Id="cb310615-939f-4f28-8aa6-0b2c4afe17e0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fcab1589-3a21-4ab3-9002-7b43b5eeefd2" name="Eliminar Plato" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d6300d1-70d4-44ba-ae43-057bef4880ac" />
+        <extendedCases>
+          <extend Id="4fcbbcfc-2fb9-4131-b8d8-c3a44c338a58">
+            <useCaseMoniker Id="513d37fa-c7ab-4f64-b2ac-7132bb07f5d5" LastKnownName="Listar Platos" />
+            <elementDefinition Id="b765526c-d81f-4d9a-a689-b08e1f535a21" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="513d37fa-c7ab-4f64-b2ac-7132bb07f5d5" name="Listar Platos" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e88f239c-64ba-49d0-b7a0-11bd83d1292d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a47f8779-1650-4ae5-b226-a961326ea450" name="Modificar Plato" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="401852bf-5268-462f-b8f5-6421203e554b" />
+        <extendedCases>
+          <extend Id="a1deddfc-9ce3-42c4-932c-273d37d200c3">
+            <useCaseMoniker Id="513d37fa-c7ab-4f64-b2ac-7132bb07f5d5" LastKnownName="Listar Platos" />
+            <elementDefinition Id="13248363-22b9-407f-8e25-6b2a912b8a84" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="df0a9d0e-8f51-40c4-8185-280e5492dc02" name="Contratar Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a6807220-0594-4746-a0dd-bc499772d29d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="38ca523c-9cdc-498d-a7d3-60e87073a027" name="Camarero" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1adbf09d-4373-4c2f-aad0-0f80f15b89f9" />
+        <targetEnds>
+          <association Id="4fca0636-2128-4da4-9f6a-27f8935f6911" isDerived="false" sourceEndRoleName="Camarero" targetEndRoleName="Controlar acceso clientes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df0a9d0e-8f51-40c4-8185-280e5492dc02" LastKnownName="Contratar Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="efe4d959-e87d-41bd-a36e-d5303d31ac6e" name="Camarero" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="147bbdba-159e-4e37-a46e-87eae8449260" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15f91c68-52e9-45c3-8d1f-678ff2f9619d" name="Controlar acceso clientes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="23e96273-02a2-4165-ad6b-cce147b61044" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0d7fd8ce-4236-439a-b4c1-bac34f4eccea" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2b39e980-31aa-4bb9-8ddc-51a2a827c143" name="Listar Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a6276952-82ce-49c9-9e33-1468fab6e75e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4a66529e-975f-400e-a09c-9c7ce8d4baa7" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="06fe1001-a446-4b75-8afd-9deb6c9a67ac">
+        <profileInstance Id="163e177a-b7f1-4d10-8868-2c2525267aa0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1c77a722-26e7-4d8d-8469-8eec3307a8c1">
+        <profileInstance Id="a1d0fb59-363f-47c9-b4f7-04dcd1d0cd7c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

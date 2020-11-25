@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="54eadb30-814b-40ec-a796-4b93c0252ee2"
+  name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="f8cb8793-1904-458a-aed6-2c5275b1216d"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="8fa1c4d6-de20-49bf-be29-0500ad7347d6">
+          <propertyInstance
+            Id="fd27cbcb-47f6-4cf9-8890-e656d2c338b1"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="9534c564-68c0-4b96-b243-6e6176e64d13">
+          <propertyInstance
+            Id="1fbfdfc2-bc70-4e6f-b383-e4df10ee1481"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="1fb8046b-9413-418a-b33e-be7e674a346f">
+          <propertyInstance
+            Id="c5b0bfd5-6613-4403-8784-e9ab3dc66012"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="d406e5c5-e9ed-485c-b61b-ac601dffb0f6"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="753f7f80-021b-41ae-954f-fa6ff1a3fcc2">
+          <propertyInstance
+            Id="c1f80712-e8d9-4870-b6c7-75bea44abbbd"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="247872af-f482-490b-b944-056aacfb0f5b">
+          <propertyInstance
+            Id="48820a0a-b15b-4c97-96e1-854cf409c090"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="d54e5b36-84f0-417a-b0ca-eee2da4ca5cc">
+          <propertyInstance
+            Id="16743d52-32c4-4b64-a41e-89534b69776e"
+            name="ProjectPath"
+            value="ClassTemplate=..\ModelingLib\ModelingLib.csproj|EnumTemplate=..\ModelingLib\ModelingLib.csproj|InterfaceTemplate=..\ModelingLib\ModelingLib.csproj|StructTemplate=..\ModelingLib\ModelingLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="256f5656-f21b-48c3-b5e5-a6d9c69b680d">
+          <propertyInstance
+            Id="44eeb413-b3e4-4809-b793-b89d4a284244"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="933518a9-bfbf-47f0-9a58-7f12201eac7f">
+          <propertyInstance
+            Id="13d262d1-bd84-4951-9a55-bd92a3c3eb1f"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="9aee075d-0450-4d8b-aae0-0b544e7427e4">
+          <propertyInstance
+            Id="9305d586-2f3d-4b4f-a1ec-c56017f36aca"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="dc9d9adc-c4b4-4e83-97c4-58d5a573e577">
+          <propertyInstance
+            Id="661f99aa-7926-4203-b7fe-4464bbe8f961"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="d34311d1-e1c5-4b96-bdb4-13282475ec26">
+      <profileInstance
+        Id="e19fe24a-e2cf-411d-8b9a-d539d5196c5b"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="02cc6bea-deda-451b-a32b-b4459602c34c">
+      <profileInstance
+        Id="57c742de-5ef3-4238-a377-0c2945567d3e"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c06986dc-2f1a-40c7-b811-68ad88aacfb9"
+        LastKnownName="Requisitos"
+        LastKnownLocation="Package_1410.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="68799602-88db-4c08-b9ed-be2fd7b87519"
+        LastKnownName="Diseno"
+        LastKnownLocation="Package1_1410.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3eb15ddb-adbd-4522-8375-d2d16bc045d7"
+        name="float" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a0cde9f6-f7b0-4ba2-9d68-2a8ac04d5482"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2ba28c32-d8cc-4154-9496-563d8653694e"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6b2db480-ad72-4098-a84b-4f749277196b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6cf0a39b-562d-4f6f-a547-f87dd53e93ce"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c588e15d-7f25-4bdd-bcfa-625e860bf7bc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="69ad72a7-45e3-4dd2-b9ea-edc87ed9edef"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="09056043-5016-4f97-93e6-bfb974edafc9">
+        <operation>
+          <operationMoniker
+            Id="b3231079-e81d-4834-9ee9-6382d7982c96"
+            LastKnownName="Create"
+            LastKnownLocation="Package2_1411.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="614754df-c49d-4c6f-8dd1-bf2b3e34c73c">
+        <operation>
+          <operationMoniker
+            Id="b3231079-e81d-4834-9ee9-6382d7982c96"
+            LastKnownName="Create"
+            LastKnownLocation="Package2_1411.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fd3828b2-555c-457e-b0a3-d3ed6b8ad793"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="74028bf4-595c-455b-ab6a-e0cad3f9b3b1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ecd66166-80a8-4db7-926d-6257724cfca7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="42d21a47-cf24-47bf-8f2f-716a83c3196b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="16bd6afa-a728-4d54-9548-36a6ee55a344"
+        name="producto" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d45e7451-1271-4bf8-bda8-4dd520f872ae"
+        name="cantidad" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bfe8a90f-a4bf-413b-9e50-c767029f5d22"
+        name="proveedor" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4663cca3-41f2-40d2-8b09-4b2de1bce032"
+        name="pedido" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="34698f8b-6014-4db9-ac49-1712780c023d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="68ad6a37-b287-4598-9bed-6b8ae47def10"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="efe86cad-de64-4e7c-8eb9-092c8b18658a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="35b93054-898c-4996-82ab-9fe9ab902689"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6a9b6bc3-5148-49f9-938b-79d2d63d146e"
+        name="Producto" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3020cb58-d83c-4e48-a61e-f7e1e7c450b1"
+        name="Proveedor" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="21d7ab3d-f0dc-400e-801c-4d1fa2ed3cba"
+        name="Habitacionr" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="21b700a6-b502-4d73-b4ed-87503ebf2416"
+        name="DateTIme" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="84f282b6-5910-42df-bd96-4e97583c5c64"
+        name="Cliente" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="58eb0006-f43f-461b-be85-a841d51e4ef0"
+        name="Pedido" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="43760852-2107-42f4-912b-97916b7bcee9"
+        name="LineaPedido" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2b99e4ef-72c1-4fec-b52c-da25ec7892c7"
+        name="Reserva" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d315b3b9-fa12-430c-81a2-4fa79772ec25"
+        name="Habitacion" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="79fe9590-a182-466d-bef9-579f2dc3ae18"
+        name="ReservaHabitacion" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7d3c53c7-63de-48af-8c1c-5292841e2a81"
+        name="Descuento" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ed3e0744-1a38-44cb-bf5e-d4e241e16c18"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8bbd65a5-4411-4be7-809a-1d4351aba5f1"
+        name="Cantidad" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a1b5615b-9e5e-4c6e-9d09-378a972e122b"
+        name="Precio" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="31ac92c0-dad8-43e2-941a-ed1f65b9d371"
+        name="Productos" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="296c0f37-42ee-41fa-80b1-f89627429af9"
+        name="&lt;List&gt;Producto" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

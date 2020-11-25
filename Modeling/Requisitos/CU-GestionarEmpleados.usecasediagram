@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="54aacd4b-73ad-4c28-87f9-bf23b9b57f66" name="CU-GestionarEmpleados" linkedPackageId="fde5f436-fe79-458c-b5b6-3c14f9eac27e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="844b480b-6b3d-4a41-a097-fe613cc07052" name="RRHH" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5aee2457-5a35-4081-bdb4-f284eb0a4af4" />
+        <targetEnds>
+          <association Id="b0b837c9-346a-42d4-b68e-5b3f38f29c14" isDerived="false" sourceEndRoleName="RRHH" targetEndRoleName="Crear Trabajador" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="22a09b79-340a-4103-9d18-8383e3b3480d" LastKnownName="Alta Candidato" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7faa1620-3a17-48c2-8f9e-4604f358d0de" name="RRHH" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76dfb9ee-0fcd-4159-ba71-602a36d3af7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7b7d70f-305b-40c7-bee2-fd3de4966a08" name="Crear Trabajador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53f365f8-e727-44d6-a69f-5fe99fce0ef0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a306b049-7cf1-4e77-bed8-46689bbfba08" />
+          </association>
+          <association Id="7a149f5e-efc4-4981-a547-4f2344bca29c" isDerived="false" sourceEndRoleName="RRHH" targetEndRoleName="Buscar Trabajador" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="caa8a87e-43c9-4732-ab9d-387918ccaf99" LastKnownName="Buscar Trabajador" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc1b208a-c08b-4056-bb53-1b777c80d414" name="RRHH" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c58bb828-c887-41e3-ade7-e50a12533e5a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="903e1834-8226-46a2-87ef-57c6d3a47235" name="Buscar Trabajador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af3d1fdc-c14e-4cb3-a4a8-50a752d63340" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18d7738f-0aa6-4df7-9486-a6a31d90d84d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="22a09b79-340a-4103-9d18-8383e3b3480d" name="Alta Candidato" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="544d5289-3e97-418b-9a34-3b2d478b7217" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c596b0a1-351b-449b-838a-4104392250ce" name="Alta Trabajador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c5bd4b5-1e9b-4f14-ba7b-4ad27919b1fe" />
+        <extendedCases>
+          <extend Id="c567b3c7-c786-4756-b439-dd53a3ddd47b">
+            <useCaseMoniker Id="22a09b79-340a-4103-9d18-8383e3b3480d" LastKnownName="Alta Candidato" />
+            <elementDefinition Id="b2c5056f-0e0e-4198-a9d7-11f411f9c327" />
+          </extend>
+          <extend Id="262c8ad2-697c-412d-be8c-4dd0b08d6b41">
+            <useCaseMoniker Id="caa8a87e-43c9-4732-ab9d-387918ccaf99" LastKnownName="Buscar Trabajador" />
+            <elementDefinition Id="2c6c09b9-defb-4bd4-a745-d9ed7c184bb0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="caa8a87e-43c9-4732-ab9d-387918ccaf99" name="Buscar Trabajador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f363e4c5-065a-48a0-8021-368b545bcff0" name="Baja Trabajador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5646a3b-d7e1-4d81-91da-3322f884f013" />
+        <extendedCases>
+          <extend Id="6bed42ee-2ea0-4756-87b0-b111c836ec68">
+            <useCaseMoniker Id="caa8a87e-43c9-4732-ab9d-387918ccaf99" LastKnownName="Buscar Trabajador" />
+            <elementDefinition Id="823b768c-b088-4295-9c5a-fcec3ffaddf7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1d8584e5-05c6-43c2-89a9-5d5c34d7034d" name="Modificar Trabajador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b895d23-9948-4117-aa59-8776521dbadf" />
+        <extendedCases>
+          <extend Id="73d1bb1f-78de-447f-881d-ce6bdbbb35f9">
+            <useCaseMoniker Id="caa8a87e-43c9-4732-ab9d-387918ccaf99" LastKnownName="Buscar Trabajador" />
+            <elementDefinition Id="78fde027-bc24-4388-91e9-575bda1f57b9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="545870f9-fa20-4175-8102-5565b026d6af" name="Crear Departamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f3188eb-c412-4b9c-8c25-362c0b789a6b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="38de7e77-1f6f-494f-96f5-7b6233425374" name="Modificar Departamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="113b9e9f-8fa2-4ed8-8d85-3186ca53ca54" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f2201665-bc1b-43f4-9b18-ad504378ffb8" name="Eliminar Departamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="95d833f3-2e76-4043-999c-db154bd3fd59" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7f2c7858-1373-4e13-9cce-92e71c12181e" name="Gerente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="814e3647-9b49-4527-bd5b-17d5cf00f668" />
+        <targetEnds>
+          <association Id="c30779ec-93ab-4022-8a22-85fa21351842" isDerived="false" sourceEndRoleName="Gerente" targetEndRoleName="Crear Departamento" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="545870f9-fa20-4175-8102-5565b026d6af" LastKnownName="Crear Departamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07e7e4b6-fa53-494b-8139-8e5dc31c5a33" name="Gerente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77d6171e-239b-4e20-af84-5e16bbbe448f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5ac76e4-8e85-415e-b37e-c52ebd12270f" name="Crear Departamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1ac499b0-e23e-49d3-b137-fcc0f7809de6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7664e29e-db97-4e1b-9f55-c795a5d252f3" />
+          </association>
+          <association Id="cbf66d6f-a91c-4b03-80d1-2ad7297014a8" isDerived="false" sourceEndRoleName="Gerente" targetEndRoleName="Modificar Departamento" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="38de7e77-1f6f-494f-96f5-7b6233425374" LastKnownName="Modificar Departamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e120d72-a91e-42ef-b7d8-daacf0c8733f" name="Gerente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="188239c2-b2fc-43ae-9a46-8acb29d8aacb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c65396c7-2c6d-4e27-aaef-6a5b1fe36e5b" name="Modificar Departamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="74dac1bf-267d-4e6b-98fb-664c7d55a46c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3e006c5f-0e72-4a49-9e5b-54b246919bb1" />
+          </association>
+          <association Id="4110bb97-5bb0-4540-8118-745864214007" isDerived="false" sourceEndRoleName="Gerente" targetEndRoleName="Eliminar Departamento" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f2201665-bc1b-43f4-9b18-ad504378ffb8" LastKnownName="Eliminar Departamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="055a55de-2d72-455f-9cac-9c5a1414884d" name="Gerente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8cb86ae1-f5b1-42f8-80c8-bf686bde9152" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="13cac903-b026-4554-8f76-8bcadf2b8e07" name="Eliminar Departamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b56c20af-2243-4321-a659-3a04532c999e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b997bc1-3b2d-40ef-9982-0d19d94601c2" />
+          </association>
+          <association Id="2c8101fd-433d-4ec4-8104-b93fbbf4373e" isDerived="false" sourceEndRoleName="Gerente" targetEndRoleName="Crear Trabajador" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="22a09b79-340a-4103-9d18-8383e3b3480d" LastKnownName="Alta Candidato" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="09b10b9d-4acd-47e0-913c-54e4b64edced" name="Gerente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b9f8ab6-dd10-4642-acdd-c97a874da793" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db9fa691-734c-4706-8192-0b9cbe3f158e" name="Crear Trabajador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e1ff028c-f7e2-4ed7-8b35-7e2e473e2e3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6843d027-f43a-4b49-bc36-e2f23a9b9459" />
+          </association>
+          <association Id="274c95ec-27a3-4bad-984e-6e131a43172b" isDerived="false" sourceEndRoleName="Gerente" targetEndRoleName="Buscar Trabajador" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="caa8a87e-43c9-4732-ab9d-387918ccaf99" LastKnownName="Buscar Trabajador" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bbcc9d7e-7388-4070-a3ac-afc04e3ad042" name="Gerente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="89cef12e-016c-4736-9a3e-ccdd613d802b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77b93cb3-9109-47b1-b847-673e0bf1df1e" name="Buscar Trabajador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bcdaf810-7f83-4f2b-9d53-4e45315b1545" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc4bb68b-9711-44ed-b5de-8d79df49f236" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fde5f436-fe79-458c-b5b6-3c14f9eac27e" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3d16b1fa-de1a-472b-96d8-9ceedb0bd818">
+        <profileInstance Id="babf2e66-b226-47e3-b5a4-d74e67a968d3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5c0245e1-98ac-4217-8058-1777e6f979fe">
+        <profileInstance Id="22764a6e-5b33-4fc6-a30e-2af96a79ad1a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

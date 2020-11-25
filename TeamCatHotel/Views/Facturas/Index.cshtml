@@ -1,0 +1,47 @@
+@model IEnumerable<TeamCatHotel.Models.Factura>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.abono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaEmision)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaPago)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.abono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaEmision)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaPago)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idFactura">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idFactura">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idFactura">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

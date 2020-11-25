@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1d778459-1047-4243-8d0a-0c76cf4cb689" name="CU-GestionarHabitaciones" linkedPackageId="732504de-4763-49a1-beb8-eec626ac96b6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8ca3ae7a-3de3-4a58-9cc4-32b18031910d" name="Recepcionista" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd16a4d-f4fe-4ca7-9237-416418fa8160" />
+        <targetEnds>
+          <association Id="e7a22120-6826-4702-998f-b5f799b32599" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Añadir habitación" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="516bc40f-1ba5-4a30-9cf7-cdb5d21d1387" LastKnownName="Añadir Habitación" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eacf15ef-be67-41b1-881b-d5c7eabc6380" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a48eb177-d5a8-4071-806d-e7662f2b557f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e6896ba-443b-4141-8bd8-5029a88eec09" name="Añadir habitación" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="87aa9b81-c42b-4e9a-8bb8-3ec23db06218" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc7cd2a4-b8cd-4328-beb4-d39ac6a51116" />
+          </association>
+          <association Id="f17797d1-5e8a-4337-aa9c-4a20bdd2ef90" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Listar habitaciones" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="84824a98-47f0-4945-8b0a-c9580f351e8c" LastKnownName="Listar Habitaciones" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b08e8096-5db6-420a-9551-e96d298fd450" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0efb3f34-6585-4363-87f5-1f7913260b9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6c6a603-e026-497e-9c20-4c0062dd203a" name="Listar habitaciones" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a7f4b94-291f-467c-9614-dbbf14e153b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee56f2f7-2d5c-4d04-89a5-be09c23b6d44" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4801ff55-072f-402d-9ee2-727e0226918d" name="Solicitar Servicios" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c87d52d-36a0-4bf7-b66e-d1f379cf907e" />
+        <extendedCases>
+          <extend Id="196000e7-b5d7-4992-9159-7296ed40ff10">
+            <useCaseMoniker Id="84824a98-47f0-4945-8b0a-c9580f351e8c" LastKnownName="Listar Habitaciones" />
+            <elementDefinition Id="5ee4849d-9178-4ffd-a462-1368a66a43ee" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="84824a98-47f0-4945-8b0a-c9580f351e8c" name="Listar Habitaciones" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1636399a-0dda-44b4-88b6-01f213817b69" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fff58141-b223-4c09-aff6-3dd51032e869" name="Modificar Habitación" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3c76425-982b-4271-afde-6fc539bab3a9" />
+        <extendedCases>
+          <extend Id="7759e333-c4ad-449d-8dcb-5ccef7794555">
+            <useCaseMoniker Id="84824a98-47f0-4945-8b0a-c9580f351e8c" LastKnownName="Listar Habitaciones" />
+            <elementDefinition Id="e8f000bc-d3e6-4de3-97a6-199dc955b314" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="516bc40f-1ba5-4a30-9cf7-cdb5d21d1387" name="Añadir Habitación" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c156524-de8f-498b-b46a-c60bf4dc1b07" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e7203efa-a55e-4f34-8bc4-9adde491b21b" name="Eliminar Habitación" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0a8a46af-a8f0-4820-a47e-e41e6a2df067" />
+        <extendedCases>
+          <extend Id="ffb4be6d-44bf-4363-b2ed-19ebd8cd2601">
+            <useCaseMoniker Id="84824a98-47f0-4945-8b0a-c9580f351e8c" LastKnownName="Listar Habitaciones" />
+            <elementDefinition Id="17403b34-ae27-4bc2-b3fd-0d9591e92673" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="732504de-4763-49a1-beb8-eec626ac96b6" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1033cf7a-5cdf-4816-91e9-f3bc7b222131">
+        <profileInstance Id="8eca3530-0c1c-4a99-b0f5-3e460a28faea" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5cb1e103-c99e-4db0-b3f1-05cc6373fe44">
+        <profileInstance Id="b3f996fe-d61a-4b77-805f-d23a940efb95" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

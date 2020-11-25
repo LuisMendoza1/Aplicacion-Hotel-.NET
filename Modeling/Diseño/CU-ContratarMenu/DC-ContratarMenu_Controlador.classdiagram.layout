@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DC-ContratarMenu_Controlador">
+  <logicalClassDesignerModelMoniker Id="569b594b-70fe-4351-b548-1f338e7793a9" />
+  <nestedChildShapes>
+    <classShape Id="dd234e1e-c31f-4d23-b595-8a76a12a8816" absoluteBounds="2.875, 1.375, 4.25, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="e051b5c1-c552-4144-8684-81c8be589499" LastKnownName="ControladorContratarMenu" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="d8e212fa-62a5-4fc2-89b4-40e2b42342cb" absoluteBounds="2.89, 1.7650000000000001, 4.2200000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="98de99d0-41c5-4b8f-8f5e-4c498b9b3226" absoluteBounds="2.89, 1.9761718675494193, 4.2200000000000006, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

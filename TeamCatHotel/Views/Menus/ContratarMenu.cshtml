@@ -1,0 +1,59 @@
+@model TeamCatHotel.Models.ResultMenuViewModel
+
+@{
+    ViewData["Title"] = "ContratarMenu";
+    bool chk = (int) ViewData["menuId"] != 0;
+}
+
+<h2>Contratar Menu</h2>
+
+<form asp-controller="Menus" asp-action="ContratarMenu" method="post">
+    <div class="form-horizontal">
+        <h4>Menu</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="menu.nombre" class="col-md-2 control-label">Menu</label>
+            <div class="col-md-10">
+                @if (chk)
+                {
+                    @Html.DropDownList("menuId", ViewBag.Menus as SelectList, new { @disabled = "disabled" })
+                    @Html.Hidden("menuId", (int) ViewData["menuId"])
+                }
+                else
+                {
+                    @Html.DropDownList("menuId", ViewBag.Menus as SelectList)
+                }
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Num. Habitacion</label>
+            <div class="col-md-10">
+                <input type="number" min="1" name="nHabitacion" value="@ViewData["nHabitacion"]" disabled="@chk"/>
+                @if (chk)
+                {
+                    @Html.Hidden("nHabitacion", (int)ViewData["nHabitacion"])
+                }
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">@Model.result</label>
+        </div>
+        <input type="hidden" name="menuIdOld" id="menuIdOld" value="@ViewData["menuId"]" />
+        <input type="hidden" name="nHabitacionOld" id="nHabitacionOld" value="@ViewData["nHabitacion"]" />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Contratar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+    <a asp-action="ContratarMenu">Cancel</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

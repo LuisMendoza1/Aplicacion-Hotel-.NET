@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9cf9ce09-3c74-41b0-906a-12a87a900b72" name="DC-HacerPedido" linkedPackageId="57ea8a06-8bf3-41ee-8df6-70f895b391c0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cd8a1d64-cedd-41fb-b210-5474239d7e3f" name="Pedido" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26516cdf-1d77-467b-9e04-f649ddd795d7" />
+        <targetEnds>
+          <association Id="538f5c82-5676-4f51-81cd-557e66193fd0" isDerived="false" sourceEndRoleName="Pedido" targetEndRoleName="Producto" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a1f64ad9-0f9f-4db4-8b29-1f786d0b937c" LastKnownName="Producto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ff7b5a2-ad39-4c37-a968-3eace1fcac12" name="Pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="704381c2-9487-466b-9597-54b580623b79" name="Lower" value="N">
+                      <elementDefinition Id="eefd4291-14ad-4450-bcea-80f9470ec7e6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d908d2d3-3d2c-45f4-b099-dea3dcdb04bf" name="Upper" value="N">
+                      <elementDefinition Id="698a77f1-f2c3-403a-845b-0f080f417874" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5d9e39f3-7de3-4fcb-bda3-e7754f1892b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c17fc9a-fcef-4a46-8790-f93d6a61d0bb" name="Producto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4ddfd8f1-94a5-4856-a12e-eda73cb11723" name="Lower" value="N">
+                      <elementDefinition Id="e6d11cf2-0e1f-49d7-a4b2-5b704de77318" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="715bf570-a347-4411-aa37-5e3a68747450" name="Upper" value="N">
+                      <elementDefinition Id="9867027d-4d07-4981-b27b-578bcaadf333" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="48e70841-e7a4-46d3-8136-a7bbccd9a68d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b76ec08f-8f0a-42ee-b96a-65e6eb549336" />
+          </association>
+          <association Id="025dc92b-9c68-477a-9522-ea3470b198d8" isDerived="false" sourceEndRoleName="Pedido" targetEndRoleName="Linea de pedido" isLeaf="false" isAbstract="false">
+            <classMoniker Id="68c0ee3a-c1cf-4efd-99b4-28f2f8df1aab" LastKnownName="Linea de pedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c126f73-e46d-49c2-8108-fd715deba32a" name="Pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
+                  <elementDefinition Id="187e29bc-1ae4-40fb-ab7a-458b63b21680" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c45ae6e-79fb-4ba8-b4a9-ffe6caec87d7" name="Linea de pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="dd679078-49c3-4533-b95c-b62609d67e10" name="Lower" value="N">
+                      <elementDefinition Id="a78c9157-dd16-4bfc-9a62-01d0b96e140b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7343050f-1c66-4798-b60b-93fc51c65bf0" name="Upper" value="N">
+                      <elementDefinition Id="5684c861-c4b2-4023-a770-175c242fe0d9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cf9695fb-3ca4-4538-9305-551c7a4cfc76" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c168079f-121b-4322-a6bd-802cae221692" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e725f611-1f5a-4283-b4d0-8d639c8c49ae" name="fechaEmision" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d0d3b7ed-8896-4320-9f53-666f8a843120" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2dc2b27e-65f4-4b2d-a07b-746a143e6f82" LastKnownName="Date" />
+            </type_NamedElement>
+          </property>
+          <property Id="85252119-1ead-4824-9b93-7d314d5cdae4" name="fechaRecepcion" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a89f0ff-93b2-4836-8dfd-aa9fab010534" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2dc2b27e-65f4-4b2d-a07b-746a143e6f82" LastKnownName="Date" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="35460d70-c8b5-44a7-a304-48cfe4c9b2e7" name="hacerPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="751cd104-65c2-4538-9f4f-0548a2c71ef5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0fe09908-bfb1-4dc3-9664-130de67e4cd0" name="producto" direction="In">
+                  <elementDefinition Id="a8c239b9-2086-4650-b1e6-eca765eb7f5d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="572304d5-8d74-449c-98c8-6f35f334b8ac" LastKnownName="Producto" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b08ec688-7608-4123-a08a-e04cc72d9218" name="cantidad" direction="In">
+                  <elementDefinition Id="01d83f51-dc8a-4691-9b3a-0d51c00b497f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ce45be96-3d2f-4cbc-8e29-3d411e2110bd" name="crearPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="579b67e1-e5b1-4766-ab5f-4593daaeb1a5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="091d7060-bd23-440a-ae5a-d11bd6ccf3a5" name="proveedor" direction="In">
+                  <elementDefinition Id="3a274970-a1b5-4614-b8a6-2ad9ff3e1e3d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="adfc6111-9873-41ec-a930-eb1c6a2e08bf" LastKnownName="Proveedor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e9a5ea3f-5744-4dbc-a15a-e06b13d9f607" name="fechaEmision" direction="In">
+                  <elementDefinition Id="e1635d9d-1c97-42f5-92c9-58660d250ad9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2dc2b27e-65f4-4b2d-a07b-746a143e6f82" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8211ceca-bbb4-41ce-a77b-b7597dceffc7" name="confirmarPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="39966c86-a699-4ad4-ac64-66796f377699" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="48cd25ed-db76-42b2-bab7-dd5e75649378" name="proveedor" direction="In">
+                  <elementDefinition Id="5914493a-d949-4a39-b367-92c7699711e7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="adfc6111-9873-41ec-a930-eb1c6a2e08bf" LastKnownName="Proveedor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c1a15bb7-855f-43e5-916d-53b3b9b3fd0d" name="fechaEmision" direction="In">
+                  <elementDefinition Id="5cf2a824-02cb-4927-8ac0-5e3278ce9c76" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2dc2b27e-65f4-4b2d-a07b-746a143e6f82" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="2dc2b27e-65f4-4b2d-a07b-746a143e6f82" name="Date" isAbstract="false" isLeaf="false" cachedFullName="Date">
+        <elementDefinition Id="dd1dde8c-cacd-4a7e-8bab-bf4aae88375f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="adfc6111-9873-41ec-a930-eb1c6a2e08bf" name="Proveedor" isAbstract="false" isLeaf="false" cachedFullName="Modeling::Diseno::Modelo::Proveedor">
+        <elementDefinition Id="fce7d540-7e9f-4b39-825f-93fa21bfbf4c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1f64ad9-0f9f-4db4-8b29-1f786d0b937c" name="Producto" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="da970608-2802-49fc-815a-7515c25b97cb" />
+        <ownedAttributesInternal>
+          <property Id="a2340ee9-c9bf-4280-922b-89a3fe5ccf16" name="cantidad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="68c7a33e-3e6f-463e-8602-347f01601c85" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="9eb16de3-06d8-41b8-97df-8929d9639bd4" name="limiteMinimo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69c467d2-d853-4e81-a8ba-82f593e90143" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="eb230c13-25a8-40ce-b14f-1b5c0f35612b" name="localizador" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15fcee35-eebb-4bfe-a9d9-77388e148bc3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="25dfc982-fae9-454f-9694-e26c195dc752" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="ee32c52a-ad99-4423-b39c-3d8b3b98eadf" name="categoria" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f83c644-eb7b-4e35-bee8-f02f72697a4d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="25dfc982-fae9-454f-9694-e26c195dc752" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="784b4e73-123e-404f-8dc4-75492931b7f8" name="ProductosDisponibles" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0075dff9-f08b-41ee-9dfc-63d8a39e76be" />
+          </operation>
+          <operation Id="e2126c8a-4680-416e-b79a-e28c30d34f25" name="ConfirmarProducto" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="33a39144-f6dd-4cea-a2ce-3e98261dd405" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="43a7fc0f-c1bd-40c9-8a12-12f23364e9cc" name="id" direction="In">
+                  <elementDefinition Id="4cdb8960-74d8-4e89-857d-558a6e9dbea7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8f8abb6b-bd34-47ab-85c0-0af0c37ac2ca" name="cantidad" direction="In">
+                  <elementDefinition Id="73a43bed-2124-4a81-86bc-d03118ceb644" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="423b101e-c9b5-4b55-9117-fd6495f37525" name="pedirListado" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="43e14536-e400-4c9c-8a1b-e8e4458fca9f" />
+          </operation>
+          <operation Id="d219447d-8e16-46f7-85a3-98846edca14b" name="seleccionarProducto" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d568039-88c7-4630-a2cf-af7ca3b98644" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5ca92905-292d-419e-ae42-e22be820dc0b" name="producto" direction="In">
+                  <elementDefinition Id="7ff66b01-3885-41bc-b187-118908f6dc7e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="572304d5-8d74-449c-98c8-6f35f334b8ac" LastKnownName="Producto" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db723eef-de68-4320-a7ca-77dca3f20b47" name="cantidad" direction="In">
+                  <elementDefinition Id="5981890b-0435-4cb1-a4c0-81565043dbde" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5f5c6144-894b-44dd-b69d-5afd9e309279" name="verProductosDisponibles" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7f4e003e-3940-4400-8754-7383070b5bd1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="25dfc982-fae9-454f-9694-e26c195dc752" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e276db02-31af-418e-a70d-bffa06834e68" name="Proveedor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fce7d540-7e9f-4b39-825f-93fa21bfbf4c" />
+        <targetEnds>
+          <association Id="78fc4839-cac4-49ea-a3d3-842ed7d832ec" isDerived="false" sourceEndRoleName="Proveedor" targetEndRoleName="Pedido" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cd8a1d64-cedd-41fb-b210-5474239d7e3f" LastKnownName="Pedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1479223e-240c-4079-9a2b-3cddd2c45d2d" name="Proveedor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dabb515a-3839-41c9-8db7-2a2dc5174d04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12a68b6a-e607-4f87-b816-dbbb9e353610" name="Pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ecb57ed4-200f-4a39-b846-056594cd6e48" name="Lower" value="N">
+                      <elementDefinition Id="c066e206-76bc-4be0-9433-476939a4df58" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f48bfad0-80fb-441a-8a18-092d2d86f45b" name="Upper" value="N">
+                      <elementDefinition Id="952075f9-91ea-45e4-bd0f-88eb87127fa3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="354853e0-bdd6-4ea1-8cbd-d003a38c735f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8ce4650c-0eab-4d6f-9e45-001d9df0ffff" />
+          </association>
+          <association Id="0812e35d-fcb6-4fbd-ae86-39da2bd71595" isDerived="false" sourceEndRoleName="Proveedor" targetEndRoleName="Producto" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a1f64ad9-0f9f-4db4-8b29-1f786d0b937c" LastKnownName="Producto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8671d5af-dedf-4979-bbfc-456b08754539" name="Proveedor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="bc07992b-1794-4829-97d8-3587806e129a" name="Lower" value="N">
+                      <elementDefinition Id="745bc3f9-c281-4928-ade7-25a5659c550f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8e5b2cb8-cbbc-4402-852f-53c6d7e71b3b" name="Upper" value="N">
+                      <elementDefinition Id="89bcb241-bcc4-4a34-ac81-373811a774b1" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="88635c1b-d424-4ce0-bc45-d8c7e5daf4cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c87f504e-23f7-4570-8ca5-e4d04a0b1c5e" name="Producto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="21bb024e-36cd-4a7f-9451-d1201b5c86c9" name="Lower" value="N">
+                      <elementDefinition Id="82dae03d-b3a7-4269-b08a-d15172bab27b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="705dc6bb-1852-4920-b51a-30568c608b90" name="Upper" value="N">
+                      <elementDefinition Id="350fd489-cc11-4a07-8e7d-9dde8e02a642" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e0215719-3051-46ec-9dcf-ca93f853a875" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f335d9b9-9283-4f57-b091-022e9f47f064" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="18fae555-051b-49dd-886a-84e402a08b1e" name="numeroCuenta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f0414e4-15f6-492f-8ee9-156dd731aeea" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="25dfc982-fae9-454f-9694-e26c195dc752" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9da3f909-c391-4794-8d28-3027c0b3213c" name="selecionarListadoProveedores" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c49a896-0bfa-4ace-bb98-649e1a486418" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="187219f0-370b-47de-aedb-05ab1f237eb2" name="Productos" direction="In">
+                  <elementDefinition Id="23680e3e-7bdf-448c-9860-5308419482f7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="572304d5-8d74-449c-98c8-6f35f334b8ac" LastKnownName="Producto" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="08648363-a46c-43a2-9ea4-8e2dd3e5dc45" name="seleccionarProveedor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c55f294f-d746-490f-8727-f00b7105cb21" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b25da13-0779-4924-9553-89eb80d962f7" name="proveedor" direction="In">
+                  <elementDefinition Id="71bb1747-57ff-4feb-8b78-3e01cbbd9977" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="adfc6111-9873-41ec-a930-eb1c6a2e08bf" LastKnownName="Proveedor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="572304d5-8d74-449c-98c8-6f35f334b8ac" name="Producto" isAbstract="false" isLeaf="false" cachedFullName="Modeling::Diseno::Modelo::Producto">
+        <elementDefinition Id="da970608-2802-49fc-815a-7515c25b97cb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68c0ee3a-c1cf-4efd-99b4-28f2f8df1aab" name="Linea de pedido" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ef3e55a6-ee89-4e45-b7dd-4354ba801ed6" />
+        <targetEnds>
+          <association Id="d01f6715-49ab-4854-89ca-632adc9728ab" isDerived="false" sourceEndRoleName="Linea de pedido" targetEndRoleName="Producto" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a1f64ad9-0f9f-4db4-8b29-1f786d0b937c" LastKnownName="Producto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cdb3b5fd-39e4-4e43-b602-2bf1e3664849" name="Linea de pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5bbcffe6-cc07-46b6-85d0-a4c0d473df8d" name="Lower" value="N">
+                      <elementDefinition Id="487f3330-799c-42c0-98cd-21485718cc02" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="dfa88046-172a-4230-9905-54e336e3258b" name="Upper" value="N">
+                      <elementDefinition Id="859ba1e1-308d-42b8-a49b-c5842b8f1a7a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="237a3a6e-d67a-44c0-9a29-11109c6aeb4d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="082e9f5f-d90e-4e1f-8eff-83d6028ca28c" name="Producto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="60ab0e18-7374-42fb-b8c6-c76cefc8a3c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0522dd5e-87e7-40da-a4a6-8ac5cc2bcfd1" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="66b6410b-d955-472b-9376-98289490a1f6" name="cantidad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2029320-b453-42e7-ade2-f4baa8c4a192" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="c0f45ece-d93c-4714-b81d-82b27283dddd" name="precio" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0427f51b-c9bc-4ee8-b18b-dc8f65efdc50" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5281367e-d28d-46e7-baa5-9a101a4115fa" LastKnownName="Float" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="06c3a12e-17ab-4125-b4bf-fd846fc1b2c8" name="anadirLineaPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64c82f93-c0d9-41f5-9200-2f9ff1c14afb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="660b470f-2363-45a6-bf4f-6bc332ab7ab7" name="producto" direction="In">
+                  <elementDefinition Id="8fc54fc4-ecee-4b75-a918-1d7617455a05" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="572304d5-8d74-449c-98c8-6f35f334b8ac" LastKnownName="Producto" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c79c39f1-0aec-42ca-afba-393a8b1b4548" name="cantidad" direction="In">
+                  <elementDefinition Id="f1c8f9a2-a822-467b-99b8-df3a10948289" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a003a87-d4f7-4983-b961-82dcf8e5eb1d" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="712076ec-0b9a-411d-b124-a06633fff31d" name="proveedor" direction="In">
+                  <elementDefinition Id="5b658509-cc1c-4a69-991f-61a9928b5269" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="adfc6111-9873-41ec-a930-eb1c6a2e08bf" LastKnownName="Proveedor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5281367e-d28d-46e7-baa5-9a101a4115fa" name="Float" isAbstract="false" isLeaf="false" cachedFullName="Float">
+        <elementDefinition Id="3eb15ddb-adbd-4522-8375-d2d16bc045d7" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="57ea8a06-8bf3-41ee-8df6-70f895b391c0" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2d47de29-0b06-42a2-b9d5-c2aea822fa49">
+        <profileInstance Id="3109a584-302b-4aab-b96b-d75cb095467a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="17e735a1-4754-4f19-b190-2c618460353b">
+        <profileInstance Id="6bc82dea-4960-45ff-9e35-1cd43407e4d2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

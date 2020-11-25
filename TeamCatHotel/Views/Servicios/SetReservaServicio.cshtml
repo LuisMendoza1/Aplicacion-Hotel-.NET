@@ -1,0 +1,107 @@
+@model TeamCatHotel.Models.SolicitaServicioViewModels.SelectedServiceViewModel
+
+@{
+    ViewData["Title"] = "Confirmacion Servicio";
+}
+
+<script type="text/javascript">
+        function checkform() {
+            var fini = this.frm.fechaInicio.value;
+            var ffin = this.frm.fechaFin.value;
+            if (validateDateFormat(fini) && validateDateFormat(ffin)) {
+                if (ffin < fini) {
+                    //alert('La fecha de fin debe ser mayor que la fecha de inicio.')
+                    this.frm.fechaFin.value = fini;
+                    return false;
+                }
+            } else {
+                alert ('La fecha no esta escrita correctamente. Recuerda tambien que debe estar en formato AAAA-mm-ddTHH:mm')
+                if (!validateDateFormat(fini)) {
+                    this.frm.fechaInicio.value = "@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")";
+                    this.frm.fechaFin.value = this.frm.fechaInicio.value;
+                } else {
+                    this.frm.fechaFin.value = this.frm.fechaInicio.value;
+                }
+            }
+            return true;
+        }
+
+        function validateDateFormat(dateVal) {
+
+            var dateVal = dateVal;
+
+            if (dateVal == null)
+                return false;
+
+            var validatePattern = /^(\d{4})(\/|-)(\d{2,2})(\/|-)(\d{2,2})(T)(\d{2,2})(\/|:)(\d{2,2})$/
+
+            dateValues = dateVal.match(validatePattern);
+
+            if (dateValues == null)
+                return false;
+
+            var dtYear = dateValues[1];
+            dtMonth = dateValues[3];
+            dtDay = dateValues[5];
+            dtHour = dateValues[7];
+            dtMin = dateValues[9];
+
+            if (dtMonth < 1 || dtMonth > 12)
+                return false;
+            else if (dtDay < 1 || dtDay > 31)
+                return false;
+            else if ((dtMonth == 4 || dtMonth == 6 || dtMonth == 9 || dtMonth == 11) && dtDay == 31)
+                return false;
+            else if (dtMonth == 2) {
+                var isleap = (dtYear % 4 == 0 && (dtYear % 100 != 0 || dtYear % 400 == 0));
+                if (dtDay > 29 || (dtDay == 29 && !isleap))
+                    return false;
+            } else if (dtHour > 23 || dtHour < 0 || dtMin < 0 || dtMin > 59) {
+                return false;
+            }
+
+            return true;
+        }
+</script>
+
+<h2>Confirmacion de la Reserva del Servicio</h2>
+<h4>Habitacion @Model.numeroHab</h4>
+<h4>@Model.nombre</h4>
+
+<div>
+    <form method="post" name="frm" asp-action="ConfirmResService">
+        <div class="form-horizontal">
+            <hr />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="col-md-offset-0  col-md-10">
+                <input asp-for="numeroHab" value="@Model.numeroHab" hidden="hidden">
+                <input asp-for="idServicio" value="@Model.idServicio" hidden="hidden">
+                <br />
+                <label asp-for="fechaInicio" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="fechaInicio" name="fechaInicio" class="form-control" onchange=checkform() value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" min=@DateTime.Now.ToString("yyyy-MM-ddTHH:mmzzz") />
+                    <span asp-validation-for="fechaInicio" class="text-danger" />
+                </div>
+                <label asp-for="fechaFin" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="fechaFin" name="fechaFin" class="form-control" onchange=checkform() value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" min=@DateTime.Now.ToString("yyyy-MM-ddTHH:mmzzz") />
+                    <span asp-validation-for="fechaFin" class="text-danger" />
+                </div>
+            </div>
+
+            <div class="col-md-offset-2  col-md-10">
+                <br /> <input type="submit" value="Confirmar Solicitud" class="btn btn-default"><br />
+                <br /><a asp-action="Index" asp-controller="Habitacions" class="btn btn-default">Cancelar</a>
+                <a asp-action="ListServices" asp-route-nHab="@Model.numeroHab" class="btn btn-default">Atr&aacutes</a>
+            </div>
+
+
+        </div>
+    </form>
+</div>
+<div><table class="table"></table></div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

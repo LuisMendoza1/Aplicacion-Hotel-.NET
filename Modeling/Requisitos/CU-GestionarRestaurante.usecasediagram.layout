@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CU-GestionarRestaurante">
+  <useCaseModelRootMoniker Id="4c0345e6-53ce-44cd-b777-967b7288dafe" />
+  <nestedChildShapes>
+    <actorShape Id="2763b30b-b34b-4f2c-9837-645e123bc314" absoluteBounds="1, 1.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="92e681e3-80fc-4b3b-aa7b-78a7d0030e6f" LastKnownName="Jefe de Cocina" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="7af3f9a5-79d1-4900-a2f1-c837474dd9dc" absoluteBounds="4.25, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f92b0540-c32c-4dab-97a7-9edbbea58586" LastKnownName="Alta Plato" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="a22df618-0074-4132-8a55-c8457a61c39d" absoluteBounds="4.25, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fcab1589-3a21-4ab3-9002-7b43b5eeefd2" LastKnownName="Eliminar Plato" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="411d9336-31fc-421b-a6f5-5c7de496e5d3" absoluteBounds="2.375, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="513d37fa-c7ab-4f64-b2ac-7132bb07f5d5" LastKnownName="Listar Platos" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.5 : 1.875); (2.375 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="00ac2753-f44d-4b12-9923-9b142f15977b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="2763b30b-b34b-4f2c-9837-645e123bc314" />
+        <useCaseShapeMoniker Id="411d9336-31fc-421b-a6f5-5c7de496e5d3" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <extendConnector edgePoints="[(4.38447236587857 : 1.17057956259); (3.24052763412143 : 1.70442043741)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="92aa7c12-f6b4-40de-8230-60be52005da6" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.4374999999999956, 1.1875000000000024, 0.61212378740310669, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="7af3f9a5-79d1-4900-a2f1-c837474dd9dc" />
+        <useCaseShapeMoniker Id="411d9336-31fc-421b-a6f5-5c7de496e5d3" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(4.38447236587857 : 2.57942043741); (3.24052763412143 : 2.04557956259)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="4fcbbcfc-2fb9-4131-b8d8-c3a44c338a58" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="3.4644912196583606, 2.4509783242570453, 0.692083333333334, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="a22df618-0074-4132-8a55-c8457a61c39d" />
+        <useCaseShapeMoniker Id="411d9336-31fc-421b-a6f5-5c7de496e5d3" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="6cb0239e-42c0-4450-b1c6-77e3eae3bba7" absoluteBounds="4.25, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a47f8779-1650-4ae5-b226-a961326ea450" LastKnownName="Modificar Plato" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.25 : 1.875); (3.375 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extender»">
+      <extendMoniker Id="a1deddfc-9ce3-42c4-932c-273d37d200c3" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="3.4375, 1.6250000000000002, 0.66541666666666632, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="6cb0239e-42c0-4450-b1c6-77e3eae3bba7" />
+        <useCaseShapeMoniker Id="411d9336-31fc-421b-a6f5-5c7de496e5d3" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="4a74507a-773c-4cd7-9e86-aea3466ef7c4" absoluteBounds="2.375, 3.5, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="df0a9d0e-8f51-40c4-8185-280e5492dc02" LastKnownName="Contratar Menu" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <actorShape Id="18335561-ca99-4735-83fe-58f9106f8781" absoluteBounds="1, 3.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="38ca523c-9cdc-498d-a7d3-60e87073a027" LastKnownName="Camarero" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(1.5 : 3.875); (2.375 : 3.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4fca0636-2128-4da4-9f6a-27f8935f6911" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="18335561-ca99-4735-83fe-58f9106f8781" />
+        <useCaseShapeMoniker Id="4a74507a-773c-4cd7-9e86-aea3466ef7c4" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="f42acd46-3b88-49ca-9c10-448be9ac5c6d" absoluteBounds="2.375, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2b39e980-31aa-4bb9-8ddc-51a2a827c143" LastKnownName="Listar Menu" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.5 : 2.00961538461538); (2.53477445031636 : 2.56680162709343)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8136c3d5-3e03-4751-879a-ab55f8ae83b8" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="2763b30b-b34b-4f2c-9837-645e123bc314" />
+        <useCaseShapeMoniker Id="f42acd46-3b88-49ca-9c10-448be9ac5c6d" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

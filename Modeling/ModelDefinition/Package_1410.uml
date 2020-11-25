@@ -1,0 +1,2359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="c06986dc-2f1a-40c7-b811-68ad88aacfb9"
+  name="Requisitos" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="eb332339-d63e-43d9-bf0d-d702cfff4289"
+        name="Encargado de Almacen"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="93061dd2-de55-4ac7-9067-06dd7da3253f"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690"
+              LastKnownName="Login"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="497f5205-a6e2-485d-8b70-6d56506ecc36"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aeddf9aa-34a9-45d4-b61f-e2b8ab195ce1"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d1572660-c1d0-465d-8974-2ce842a90bf2"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3e40ef87-d063-469e-acde-90f7e64001c8"
+              LastKnownName="Logout"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d0eab79-9930-4ec5-83fe-30324d9757a7"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3e94b4b-2892-472c-9dc6-a3b8dd426dee"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3bfebeed-9faa-4c4d-b4be-9025da4e3ae1"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Anadir factura externa"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d6375d24-436c-4bd6-af1f-7cd0b1e5f172"
+              LastKnownName="Alta Factura Externa"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cab1f02-a0df-4385-a668-4183474abbb6"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="391194a5-0088-4b2e-a28a-540c2b813199"
+                  name="Anadir factura externa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0973a36f-b54f-4cd5-9f66-c3669a4ac339"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Pagar factura externa"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="aa7d3983-f048-4eaa-8894-639103a837d2"
+              LastKnownName="Gestion Pago Factura Externa"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a2671a0-3b69-459a-b856-1852cd1c5f9a"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ce25aed-0e1d-4f8b-a322-0adcbc8c9c72"
+                  name="Pagar factura externa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="597d1a53-cd00-46a1-b710-7fa9b8588a6e"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Hacer pedido"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b89cdc6a-6043-4aeb-be8c-e9640f4b3211"
+              LastKnownName="Hacer Pedido"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="48284e35-1c2c-44fe-9807-aabf6642187c"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5fa9d0c0-91e3-4aca-b5ac-b852fe1b0fd5"
+                  name="Hacer pedido"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="133898dc-3a12-42d5-ab54-d7cf3d916e72"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Buscar producto"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="79fca13d-4d71-4a71-b09e-dd6dfb42c4a5"
+              LastKnownName="Buscar Producto"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a0db165-4c6b-46da-b466-08bf1ba77090"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a079933-f6d3-40b0-a36a-71d2bf1b9750"
+                  name="Buscar producto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="46669715-dc05-41a1-adca-4cada4973d58"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Buscar pedido"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4b4c1f7f-d9fe-4271-912a-4d1fc5caeceb"
+              LastKnownName="Buscar Pedido"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5acefa6-e606-4fbc-9b22-705c4edfac5f"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a314b01-21cf-4b9e-93ed-3687578e999a"
+                  name="Buscar pedido"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33e8ff9c-eacd-4d00-80dd-61a2d32028b5"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Anadir producto"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ed63936a-7ae2-4fd1-b016-81436cc8bf0e"
+              LastKnownName="Alta Nuevo Producto"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a66b4c61-b3ff-4453-b6ae-74c92012f060"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37a25654-e833-40cd-9ef4-3b800aeec3f7"
+                  name="Anadir producto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b7508cb6-7d1e-499c-9ebe-101edfeba386"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Anadir proveedor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7d7ff907-9904-460c-8424-05cbc928302a"
+              LastKnownName="Alta Proveedor"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93db0265-faa8-4fd2-83b5-21f4bdc88571"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42414418-cb0f-470c-9ced-7d46a3143d9f"
+                  name="Anadir proveedor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="43ef10e1-4c46-4fda-9e34-3c661bcc2765"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Buscar proveedor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b640db79-a518-4844-a195-76f45957b14a"
+              LastKnownName="Buscar Proveedor"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efc01186-5dbf-4ef8-b570-f05ea74a9bf5"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="809ea805-3c52-4596-b306-f0f43de359f1"
+                  name="Buscar proveedor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ffa8f7a6-42dc-494a-a975-06aed0e612b1"
+            isDerived="false"
+            sourceEndRoleName="Encargado de Almacen"
+            targetEndRoleName="Listar productos asociados"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f9304ced-dbb1-4027-9113-2ce92dd65ed7"
+              LastKnownName="Listar Productos Asociados"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="448bd4a1-3d56-41e8-bc42-f431505bda12"
+                  name="Encargado de Almacen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8140c7ab-75c7-45c9-b867-2f18d95fb555"
+                  name="Listar productos asociados"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="814e3647-9b49-4527-bd5b-17d5cf00f668"
+        name="Gerente"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ce5f86b5-c58c-4858-9fb7-0b0ff6dbc4bf"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690"
+              LastKnownName="Login"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="650f0c3c-d420-4dc5-b854-766e9bd7beda"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9cb4dc80-059b-4239-9193-948e5a6b4266"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f7f6a6de-86a2-4117-bc6b-0e2c19b0c36e"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3e40ef87-d063-469e-acde-90f7e64001c8"
+              LastKnownName="Logout"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16b637f4-9012-4a7e-9ec4-d016657b9ed9"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9295baa-892b-4e91-b1fb-b86f1b9d7a25"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e52806ed-5f39-47ea-a170-bddce89dd028"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Anadir Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8b42087c-88fd-4575-ba84-823b6714c9a2"
+              LastKnownName="Anadir Usuario"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="061ffbf0-f1e4-492b-b5e4-a1b2121af6e5"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="542de229-39a0-4634-a4c1-b95c094b1b24"
+                  name="Anadir Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a8b80277-f81a-45d1-9a05-b718177e5d1f"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Eliminar Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2b7ce02b-5ace-4353-b279-2d6789b0cb8d"
+              LastKnownName="Eliminar Usuario"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06029826-5ebd-4b09-aca7-4876d6b6d3cd"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c260c51c-a907-4953-ab83-7a2e742a6ee8"
+                  name="Eliminar Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e8d84b5a-824a-4a8d-9da6-a39731e50401"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Modificar Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d222d49f-d004-4407-bacf-02ba53e20b55"
+              LastKnownName="Modificar Usuario"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04a93c18-29fc-4748-bd22-da6e798550d6"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06dfcd4b-c6ee-4509-9e09-5c3530f554dd"
+                  name="Modificar Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7664e29e-db97-4e1b-9f55-c795a5d252f3"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Crear Departamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0f3188eb-c412-4b9c-8c25-362c0b789a6b"
+              LastKnownName="Crear Departamento"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77d6171e-239b-4e20-af84-5e16bbbe448f"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ac499b0-e23e-49d3-b137-fcc0f7809de6"
+                  name="Crear Departamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3e006c5f-0e72-4a49-9e5b-54b246919bb1"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Modificar Departamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="113b9e9f-8fa2-4ed8-8d85-3186ca53ca54"
+              LastKnownName="Modificar Departamento"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="188239c2-b2fc-43ae-9a46-8acb29d8aacb"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74dac1bf-267d-4e6b-98fb-664c7d55a46c"
+                  name="Modificar Departamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5b997bc1-3b2d-40ef-9982-0d19d94601c2"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Eliminar Departamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="95d833f3-2e76-4043-999c-db154bd3fd59"
+              LastKnownName="Eliminar Departamento"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8cb86ae1-f5b1-42f8-80c8-bf686bde9152"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b56c20af-2243-4321-a659-3a04532c999e"
+                  name="Eliminar Departamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6843d027-f43a-4b49-bc36-e2f23a9b9459"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Crear Trabajador"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="544d5289-3e97-418b-9a34-3b2d478b7217"
+              LastKnownName="Alta Candidato"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b9f8ab6-dd10-4642-acdd-c97a874da793"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1ff028c-f7e2-4ed7-8b35-7e2e473e2e3f"
+                  name="Crear Trabajador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bc4bb68b-9711-44ed-b5de-8d79df49f236"
+            isDerived="false"
+            sourceEndRoleName="Gerente"
+            targetEndRoleName="Buscar Trabajador"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f"
+              LastKnownName="Buscar Trabajador"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89cef12e-016c-4736-9a3e-ccdd613d802b"
+                  name="Gerente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bcdaf810-7f83-4f2b-9d53-4e45315b1545"
+                  name="Buscar Trabajador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0f6cf6b7-d469-4702-99c4-c5d7c4baaebe"
+        name="Jefe de Cocina"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="39951e1d-cf11-44b2-84cf-d8ca0adabba4"
+            isDerived="false"
+            sourceEndRoleName="Jefe de Cocina"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690"
+              LastKnownName="Login"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca2cee05-2a91-4108-881d-cd51ae10b88d"
+                  name="Jefe de Cocina"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="651128e1-6752-43ca-984e-b46fc2240b99"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f808b973-707a-4781-a9ca-94502a215265"
+            isDerived="false"
+            sourceEndRoleName="Jefe de Cocina"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3e40ef87-d063-469e-acde-90f7e64001c8"
+              LastKnownName="Logout"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b00ec88-9cdd-463c-8c39-958195db8c27"
+                  name="Jefe de Cocina"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e98622a9-24c2-4577-8ba0-22803078cb25"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f2f9fb50-2955-45ac-a7f7-4af10eda8f38"
+            isDerived="false"
+            sourceEndRoleName="Jefe de Cocina"
+            targetEndRoleName="Listar comida"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e88f239c-64ba-49d0-b7a0-11bd83d1292d"
+              LastKnownName="Listar Platos"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7952651f-10a0-4f48-b158-53d8be15e728"
+                  name="Jefe de Cocina"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb76c988-2c92-4e1e-89e1-2bab393035c8"
+                  name="Listar comida"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0c2bf367-2e87-4168-b82e-411fecac8dea"
+            isDerived="false"
+            sourceEndRoleName="Jefe de Cocina"
+            targetEndRoleName="Listar menu"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a6276952-82ce-49c9-9e33-1468fab6e75e"
+              LastKnownName="Listar Menu"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c71791e-5584-4d61-92fe-90284fd604d3"
+                  name="Jefe de Cocina"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a1d964e-39ea-4945-b433-29c74fcb26c8"
+                  name="Listar menu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6dd16a4d-f4fe-4ca7-9237-416418fa8160"
+        name="Recepcionista"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="57c0cd5b-3f83-4d3e-852d-502089781d78"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690"
+              LastKnownName="Login"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8ebab19-c879-4e8e-855c-7caf27609bac"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44fbeeb3-71b3-43cc-b204-50408e65c382"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="67bb6c08-9caa-4bb7-af69-e9278d5c0ca2"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3e40ef87-d063-469e-acde-90f7e64001c8"
+              LastKnownName="Logout"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02abd742-b74b-47af-8afe-8ce52a93588c"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5bbde83d-347f-4070-9316-239affe01c74"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b33c79a2-f8b0-4128-8ff0-8b5fba504d6f"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Hacer Reserva"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dddfccdb-b3b9-45ac-9c1f-bfc74c549db9"
+              LastKnownName="Hacer Reserva"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b916e4ef-71af-4799-8bc6-89abbd636972"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9cdfc628-4525-4da7-a571-1168156d8bad"
+                  name="Hacer Reserva"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d8a2c73d-c8a8-4cf0-938d-7ccdb5b8003e"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Modificar Reserva"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7fe383d6-9c17-4a55-ba5e-766bc55c37a4"
+              LastKnownName="Modificar Reserva"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dddd5ad5-85fb-4fb0-a5e7-399e6e1e0a3f"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e3fc6bbe-9825-4002-98cb-f0352f099f02"
+                  name="Modificar Reserva"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e7b91ad8-9b68-4308-a79b-cee143e23b80"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Eliminar Reserva"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43d7d9fa-3f3b-47f9-8358-4138f2d9a8ca"
+              LastKnownName="Eliminar Reserva"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b60e95f-8d2f-42a2-a329-e8fd3d6cd5c3"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="204a977b-c9b5-4433-b480-f5de77364038"
+                  name="Eliminar Reserva"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f57914b9-1a4a-44c5-ab5b-01ad9ce684ae"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5829d5e9-4382-4c4d-98e9-035f51adec67"
+              LastKnownName="Crear Cliente"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64861d41-c30f-45c7-adcf-fb9232961bd6"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b286d90b-a994-4826-9c81-57d91b389cf9"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d6a01b56-3e45-4563-83fe-c61ddd9f1fca"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="UseCase2"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="76f3f519-b3c9-432f-9ccc-a75c9c5ae05a"
+              LastKnownName="Modificar Cliente"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ca53261-a03a-439d-bd34-9f6614d6295a"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5d2befe-ca2c-47ba-a212-c2af51770f48"
+                  name="UseCase2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e7c2247d-d443-47e3-b57d-3d5c064841c4"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="UseCase3"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="609ff011-0800-4cb9-b19e-44c6a96743f2"
+              LastKnownName="Eliminar Cliente"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4149fd7e-99b4-44d2-af23-72daa5b16e78"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6a29d09-69e7-457d-ade5-63f3214388be"
+                  name="UseCase3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="af65aab2-7470-4b07-91f4-4325a7585952"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Buscar factura"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a77dbb62-0547-4da9-b1d2-2d299171f627"
+              LastKnownName="Buscar Factura"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd14b0f8-e852-4607-af1b-5e7a90eb0d02"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d6ca224-f088-4038-86db-46963a66493b"
+                  name="Buscar factura"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fc7cd2a4-b8cd-4328-beb4-d39ac6a51116"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Anadir habitacion"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5c156524-de8f-498b-b46a-c60bf4dc1b07"
+              LastKnownName="Anadir Habitacion"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a48eb177-d5a8-4071-806d-e7662f2b557f"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87aa9b81-c42b-4e9a-8bb8-3ec23db06218"
+                  name="Anadir habitacion"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ee56f2f7-2d5c-4d04-89a5-be09c23b6d44"
+            isDerived="false"
+            sourceEndRoleName="Recepcionista"
+            targetEndRoleName="Listar habitaciones"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1636399a-0dda-44b4-88b6-01f213817b69"
+              LastKnownName="Listar Habitaciones"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0efb3f34-6585-4363-87f5-1f7913260b9f"
+                  name="Recepcionista"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a7f4b94-291f-467c-9614-dbbf14e153b4"
+                  name="Listar habitaciones"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5aee2457-5a35-4081-bdb4-f284eb0a4af4"
+        name="RRHH"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e35c71bd-9f46-4aa2-b116-d85ccfbda27b"
+            isDerived="false"
+            sourceEndRoleName="RRHH"
+            targetEndRoleName="Anadir Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8b42087c-88fd-4575-ba84-823b6714c9a2"
+              LastKnownName="Anadir Usuario"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4812f620-75b0-4a34-96a6-423161730f65"
+                  name="RRHH"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="832cceb4-3370-4464-9411-fc31a9675a16"
+                  name="Anadir Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c92c7bfe-9938-4eaa-b462-fa4c9d93a3b2"
+            isDerived="false"
+            sourceEndRoleName="RRHH"
+            targetEndRoleName="Eliminar Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2b7ce02b-5ace-4353-b279-2d6789b0cb8d"
+              LastKnownName="Eliminar Usuario"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a925f89-3441-4931-a5f6-5100127188cd"
+                  name="RRHH"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6486518-3ad8-4dc1-9d49-8a1680382654"
+                  name="Eliminar Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a1028e91-9105-41e7-b2a1-4a279b1c024c"
+            isDerived="false"
+            sourceEndRoleName="RRHH"
+            targetEndRoleName="Modificar Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d222d49f-d004-4407-bacf-02ba53e20b55"
+              LastKnownName="Modificar Usuario"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="92836385-19aa-40fb-95d4-92438e2ebced"
+                  name="RRHH"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03345d44-554b-4641-af2f-732de265bfae"
+                  name="Modificar Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a306b049-7cf1-4e77-bed8-46689bbfba08"
+            isDerived="false"
+            sourceEndRoleName="RRHH"
+            targetEndRoleName="Crear Trabajador"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="544d5289-3e97-418b-9a34-3b2d478b7217"
+              LastKnownName="Alta Candidato"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76dfb9ee-0fcd-4159-ba71-602a36d3af7b"
+                  name="RRHH"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53f365f8-e727-44d6-a69f-5fe99fce0ef0"
+                  name="Crear Trabajador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="18d7738f-0aa6-4df7-9486-a6a31d90d84d"
+            isDerived="false"
+            sourceEndRoleName="RRHH"
+            targetEndRoleName="Buscar Trabajador"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f"
+              LastKnownName="Buscar Trabajador"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c58bb828-c887-41e3-ade7-e50a12533e5a"
+                  name="RRHH"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af3d1fdc-c14e-4cb3-a4a8-50a752d63340"
+                  name="Buscar Trabajador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6586559c-bd60-42fe-85e9-9ffb75c78761"
+            isDerived="false"
+            sourceEndRoleName="RRHH"
+            targetEndRoleName="Buscar Notas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e16a1d3-3cb4-436d-85e0-b598f3fda977"
+              LastKnownName="Ver Notas"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd9651d7-79a5-4b85-9b9a-37ea76fd1776"
+                  name="RRHH"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c7305ef-9dfb-4ea8-ade1-1bf894da43d5"
+                  name="Buscar Notas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8b42087c-88fd-4575-ba84-823b6714c9a2"
+        name="Anadir Usuario"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b7ce02b-5ace-4353-b279-2d6789b0cb8d"
+        name="Eliminar Usuario"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3e40ef87-d063-469e-acde-90f7e64001c8"
+        name="Logout"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d222d49f-d004-4407-bacf-02ba53e20b55"
+        name="Modificar Usuario"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43d7d9fa-3f3b-47f9-8358-4138f2d9a8ca"
+        name="Eliminar Reserva"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7fe383d6-9c17-4a55-ba5e-766bc55c37a4"
+        name="Modificar Reserva"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dddfccdb-b3b9-45ac-9c1f-bfc74c549db9"
+        name="Hacer Reserva"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5829d5e9-4382-4c4d-98e9-035f51adec67"
+        name="Crear Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="76f3f519-b3c9-432f-9ccc-a75c9c5ae05a"
+        name="Modificar Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="609ff011-0800-4cb9-b19e-44c6a96743f2"
+        name="Eliminar Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1c5bd4b5-1e9b-4f14-ba7b-4ad27919b1fe"
+        name="Alta Trabajador"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b2c5056f-0e0e-4198-a9d7-11f411f9c327">
+            <useCaseMoniker
+              Id="544d5289-3e97-418b-9a34-3b2d478b7217"
+              LastKnownName="Alta Candidato"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+          <extend
+            Id="2c6c09b9-defb-4bd4-a745-d9ed7c184bb0">
+            <useCaseMoniker
+              Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f"
+              LastKnownName="Buscar Trabajador"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e5646a3b-d7e1-4d81-91da-3322f884f013"
+        name="Baja Trabajador"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="823b768c-b088-4295-9c5a-fcec3ffaddf7">
+            <useCaseMoniker
+              Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f"
+              LastKnownName="Buscar Trabajador"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f"
+        name="Buscar Trabajador"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f3188eb-c412-4b9c-8c25-362c0b789a6b"
+        name="Crear Departamento"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="544d5289-3e97-418b-9a34-3b2d478b7217"
+        name="Alta Candidato"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="95d833f3-2e76-4043-999c-db154bd3fd59"
+        name="Eliminar Departamento"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="113b9e9f-8fa2-4ed8-8d85-3186ca53ca54"
+        name="Modificar Departamento"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b895d23-9948-4117-aa59-8776521dbadf"
+        name="Modificar Trabajador"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="78fde027-bc24-4388-91e9-575bda1f57b9">
+            <useCaseMoniker
+              Id="3c4f6daf-afbe-489c-97cb-e3cb92b3387f"
+              LastKnownName="Buscar Trabajador"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1d2d115c-e00b-49a4-bb5d-b790e706eae8"
+        name="Persona"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="81df4894-0b3f-447c-b2b4-7d16b48b34b5"
+            isDerived="false"
+            sourceEndRoleName="Persona"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690"
+              LastKnownName="Login"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9fa7b50-b06e-4de3-9702-b0921ff4067d"
+                  name="Persona"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="241960f9-8b11-4941-888d-8a2ab80dc7b3"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f5f14f27-8560-45db-82f6-391634da96a5"
+            isDerived="false"
+            sourceEndRoleName="Persona"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3e40ef87-d063-469e-acde-90f7e64001c8"
+              LastKnownName="Logout"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2aae56c7-7d13-4df8-a0a0-8edb29e94043"
+                  name="Persona"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0eaca52f-d664-43b2-9703-fae09192bdc4"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9778ca5a-bb35-4b0e-aba0-87c3a3f5fd65"
+        name="Alta Nota"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9848d841-3c66-4809-8d84-38ab78ecaee4">
+            <useCaseMoniker
+              Id="1e16a1d3-3cb4-436d-85e0-b598f3fda977"
+              LastKnownName="Ver Notas"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e16a1d3-3cb4-436d-85e0-b598f3fda977"
+        name="Ver Notas"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d64207fb-7265-40b9-8a06-df8cc44f1b88"
+        name="Modificar Nota"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="efc833b6-0da1-4c97-a471-e7df4b357f95">
+            <useCaseMoniker
+              Id="1e16a1d3-3cb4-436d-85e0-b598f3fda977"
+              LastKnownName="Ver Notas"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="882dc8a6-757f-4c09-88be-18c2149e721a"
+        name="Eliminar Nota"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="14d7e941-817f-417e-ae23-b5030b2319a2">
+            <useCaseMoniker
+              Id="1e16a1d3-3cb4-436d-85e0-b598f3fda977"
+              LastKnownName="Ver Notas"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d6375d24-436c-4bd6-af1f-7cd0b1e5f172"
+        name="Alta Factura Externa"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a77dbb62-0547-4da9-b1d2-2d299171f627"
+        name="Buscar Factura"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="95826fd6-b06a-4460-954b-fa692a176420"
+        name="Cursar Factura"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9a1e7b2b-d90f-4328-9a14-06b2351fcfff">
+            <useCaseMoniker
+              Id="a77dbb62-0547-4da9-b1d2-2d299171f627"
+              LastKnownName="Buscar Factura"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aa7d3983-f048-4eaa-8894-639103a837d2"
+        name="Gestion Pago Factura Externa"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="accfffe8-dfaf-4c48-b0f5-04360db498d9"
+        name="Recibir Pedido"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3baf9042-2096-402f-b756-6f619f62fc53">
+            <useCaseMoniker
+              Id="4b4c1f7f-d9fe-4271-912a-4d1fc5caeceb"
+              LastKnownName="Buscar Pedido"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d1d49f81-519f-45e5-992d-797f52b4a92a"
+        name="Modificar Proveedor"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e9c21498-4134-475d-8fbd-3497f1dfcfc6">
+            <useCaseMoniker
+              Id="b640db79-a518-4844-a195-76f45957b14a"
+              LastKnownName="Buscar Proveedor"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a71e8a5d-3eb5-4728-8963-19096ad127db"
+        name="Modificar Producto"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6be10fd1-d81e-490b-9629-7149822d2b19">
+            <useCaseMoniker
+              Id="79fca13d-4d71-4a71-b09e-dd6dfb42c4a5"
+              LastKnownName="Buscar Producto"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f4112737-6b2e-4ca7-93dd-8c8f21bfa15a"
+        name="Modificar Pedido"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a959a8a3-d0a9-4287-b149-355b0ff393fa">
+            <useCaseMoniker
+              Id="4b4c1f7f-d9fe-4271-912a-4d1fc5caeceb"
+              LastKnownName="Buscar Pedido"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="401852bf-5268-462f-b8f5-6421203e554b"
+        name="Modificar Plato"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="13248363-22b9-407f-8e25-6b2a912b8a84">
+            <useCaseMoniker
+              Id="e88f239c-64ba-49d0-b7a0-11bd83d1292d"
+              LastKnownName="Listar Platos"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2574169b-a61a-47eb-b80e-f75dd20f3667"
+        name="Eliminar producto"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a71a9b79-596c-42ac-9975-cc4ce3c3473f">
+            <useCaseMoniker
+              Id="79fca13d-4d71-4a71-b09e-dd6dfb42c4a5"
+              LastKnownName="Buscar Producto"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9304ced-dbb1-4027-9113-2ce92dd65ed7"
+        name="Listar Productos Asociados"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e88f239c-64ba-49d0-b7a0-11bd83d1292d"
+        name="Listar Platos"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b89cdc6a-6043-4aeb-be8c-e9640f4b3211"
+        name="Hacer Pedido"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="88b1286e-acfd-4f1c-93e0-7a0aa8303a7c"
+        name="Eliminar Proveedor"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="74556f25-56ea-4639-a5fe-d8bc6fb6cdf4">
+            <useCaseMoniker
+              Id="b640db79-a518-4844-a195-76f45957b14a"
+              LastKnownName="Buscar Proveedor"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d6300d1-70d4-44ba-ae43-057bef4880ac"
+        name="Eliminar Plato"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b765526c-d81f-4d9a-a689-b08e1f535a21">
+            <useCaseMoniker
+              Id="e88f239c-64ba-49d0-b7a0-11bd83d1292d"
+              LastKnownName="Listar Platos"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a6807220-0594-4746-a0dd-bc499772d29d"
+        name="Contratar Menu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c3d7f73-e6f2-43d5-a899-eae013989348"
+        name="Cancelar Pedido"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b3b0c21e-0243-410f-95b1-9e429f67e029">
+            <useCaseMoniker
+              Id="4b4c1f7f-d9fe-4271-912a-4d1fc5caeceb"
+              LastKnownName="Buscar Pedido"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b640db79-a518-4844-a195-76f45957b14a"
+        name="Buscar Proveedor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="79fca13d-4d71-4a71-b09e-dd6dfb42c4a5"
+        name="Buscar Producto"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4b4c1f7f-d9fe-4271-912a-4d1fc5caeceb"
+        name="Buscar Pedido"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7d7ff907-9904-460c-8424-05cbc928302a"
+        name="Alta Proveedor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ed63936a-7ae2-4fd1-b016-81436cc8bf0e"
+        name="Alta Nuevo Producto"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5bba7c0-5088-4387-9a5c-faee24158de2"
+        name="Alta Plato"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="cb310615-939f-4f28-8aa6-0b2c4afe17e0">
+            <useCaseMoniker
+              Id="e88f239c-64ba-49d0-b7a0-11bd83d1292d"
+              LastKnownName="Listar Platos"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c87d52d-36a0-4bf7-b66e-d1f379cf907e"
+        name="Solicitar Servicios"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5ee4849d-9178-4ffd-a462-1368a66a43ee">
+            <useCaseMoniker
+              Id="1636399a-0dda-44b4-88b6-01f213817b69"
+              LastKnownName="Listar Habitaciones"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f3c76425-982b-4271-afde-6fc539bab3a9"
+        name="Modificar Habitacion"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e8f000bc-d3e6-4de3-97a6-199dc955b314">
+            <useCaseMoniker
+              Id="1636399a-0dda-44b4-88b6-01f213817b69"
+              LastKnownName="Listar Habitaciones"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1636399a-0dda-44b4-88b6-01f213817b69"
+        name="Listar Habitaciones"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0a8a46af-a8f0-4820-a47e-e41e6a2df067"
+        name="Eliminar Habitacion"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="17403b34-ae27-4bc2-b3fd-0d9591e92673">
+            <useCaseMoniker
+              Id="1636399a-0dda-44b4-88b6-01f213817b69"
+              LastKnownName="Listar Habitaciones"
+              LastKnownLocation="Package_1410.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5c156524-de8f-498b-b46a-c60bf4dc1b07"
+        name="Anadir Habitacion"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1adbf09d-4373-4c2f-aad0-0f80f15b89f9"
+        name="Camarero"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0d7fd8ce-4236-439a-b4c1-bac34f4eccea"
+            isDerived="false"
+            sourceEndRoleName="Camarero"
+            targetEndRoleName="Controlar acceso clientes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a6807220-0594-4746-a0dd-bc499772d29d"
+              LastKnownName="Contratar Menu"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="147bbdba-159e-4e37-a46e-87eae8449260"
+                  name="Camarero"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23e96273-02a2-4165-ad6b-cce147b61044"
+                  name="Controlar acceso clientes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a6276952-82ce-49c9-9e33-1468fab6e75e"
+        name="Listar Menu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,30 @@
+@model TeamCatHotel.Models.ReservaServicio
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReservaServicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaFin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaInicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaInicio)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idReservaServicio">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

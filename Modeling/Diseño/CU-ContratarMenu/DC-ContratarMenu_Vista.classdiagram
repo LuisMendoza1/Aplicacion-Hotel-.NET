@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="65faf744-0d98-4bba-965c-367d223f861c" name="DC-ContratarMenu_Vista" linkedPackageId="08dd05cb-1344-4a5f-ae0c-e59e148b1daa" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8035e4b4-dc1e-4b3b-8478-9bf34414ca57">
+      <profileInstance Id="0ede3af8-9f40-42bd-afe1-d07f65435e53" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5f661f20-bb3f-46fb-9c50-e186f486f746">
+      <profileInstance Id="15c19a1f-8b37-44fb-9f6e-1cf7b3807722" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eaf60b7c-5a9e-45d2-a96c-0e411c9fac66" name="VistaContratarMenu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="708037ee-12e5-41d6-88dc-646178b58dd8" />
+        <targetEnds>
+          <association Id="0ebe553f-f572-4b9a-b80e-d3c7fa71727a" isDerived="false" sourceEndRoleName="VistaContratarMenu" targetEndRoleName="VistaSeleccionComensales" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bf8c6c4a-da9e-4afd-b58d-aaeacecca24f" LastKnownName="VistaSeleccionComensales" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c58370ec-ffc7-49ee-aade-c663188eb89d" name="VistaContratarMenu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e04dcef8-b28d-4516-b2e7-c91c1aa4e10c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7192a2c-f946-43f5-b56d-1559ba3dc6e9" name="VistaSeleccionComensales" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4872e0d-aa5b-46ae-b3d6-e096e0325a05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="decf0856-08cd-4263-bf9b-ccfc8ae021d1" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bf8c6c4a-da9e-4afd-b58d-aaeacecca24f" name="VistaSeleccionComensales" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b7b2c7cc-2c5e-46ef-a5cc-7e7d2a7fca75" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="08dd05cb-1344-4a5f-ae0c-e59e148b1daa" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+  </package>
+</logicalClassDesignerModel>

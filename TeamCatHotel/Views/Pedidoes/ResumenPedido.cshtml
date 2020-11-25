@@ -1,0 +1,156 @@
+﻿@model TeamCatHotel.Models.PedidoViewModel.ResumenViewModel
+
+@{
+    ViewData["Title"] = "Confirmar Pedido";
+}
+<br />
+<br />
+<br />
+<h2>Resumen Pedido</h2>
+
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="ResumenPedido" method="post">
+    <div class="form-group" hidden="hidden">
+        <input asp-for="idProveedor" />
+    </div>
+    <h3>Proveedor :</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Pais
+                </th>
+                <th>
+                    Provincia
+                </th>
+                <th>
+                    Localidad
+                </th>
+                <th>
+                    Correo Electronico
+                </th>
+                <th>
+                    Direccion
+                </th>
+                <th>
+                    Numero de Cuenta
+                </th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.nombre)
+                    <input type="hidden" name="nombreProveedor" value="@Model.pedido.Proveedor.nombre" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.pais)
+                    <input type="hidden" name="paisProveedor" value="@Model.pedido.Proveedor.pais" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.provincia)
+                    <input type="hidden" name="provinciaProveedor" value="@Model.pedido.Proveedor.pais" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.correoElectronico)
+                    <input type="hidden" name="localidadProveedor" value="@Model.pedido.Proveedor.correoElectronico" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.localidad)
+                    <input type="hidden" name="localidadProveedor" value="@Model.pedido.Proveedor.localidad" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.direccion)
+                    <input type="hidden" name="correoProveedor" value="@Model.pedido.Proveedor.direccion" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.pedido.Proveedor.numeroCuenta)
+                    <input type="hidden" name="direccionProveedor" value="@Model.pedido.Proveedor.numeroCuenta" />
+                </td>
+
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <h3>Producto/Productos :</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Cantidad
+                </th>
+                <th>
+                    Precio
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+    @if (Model.pedido.LineasPedido.Count() == 0)
+            {
+        <tr>
+            <td>
+                <p>No hay productos para mostrar.</p>
+            </td>
+        </tr>
+            }
+                 else
+            {
+        @foreach (var item in Model.pedido.LineasPedido)
+                {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.producto.nombre)
+                    <input type="hidden" name="listaIdsProductosSeleccionados" value="@item.producto.idProducto" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cantidad)
+                    <input type="hidden" name="listaCantidades" value="@item.cantidad" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.precio)
+                    <input type="hidden" name="listaPreciosSeleccionados" value="@item.precio" />
+                </td>
+            </tr>
+                
+                 }
+
+            }
+           
+        </tbody>
+    </table>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Total:         @Html.DisplayFor(modelItem => Model.precioTotal)
+                    <input type="hidden" name="PrecioTotal" value="@Model.precioTotal" />
+                </th>
+            </tr>
+        </thead>
+    </table>
+          
+    
+    <br />
+    <button type="submit" class="btn btn-primary">Realizar pedido</button>
+    <br />
+    <br />
+    <a asp-action="SelectProveedor" class="btn btn-primary" asp-controller="Pedidoes">Cancelar pedido</a>
+
+    
+</form>

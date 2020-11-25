@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CU-GestionReservas">
+  <useCaseModelRootMoniker Id="ccbfe0e6-99a6-43cf-8115-c4ad7bfa35c2" />
+  <nestedChildShapes>
+    <actorShape Id="abf7cb8e-e2d9-458c-b49c-a3860ef526e4" absoluteBounds="3.5, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="6cdfb7ca-0de1-456a-85c1-592a0a8a87e0" LastKnownName="Recepcionista" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="d86695ab-c7f4-4b2f-b9eb-1a414c9e7fd9" absoluteBounds="5.5, 1, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a81cd50f-30b1-4f69-9f6f-c5d045c1a86d" LastKnownName="Hacer Reserva" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 2.36111111111111); (5.66551763418877 : 1.43582353656179)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="911d9782-46ea-4142-9f33-c975a7632a05" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="abf7cb8e-e2d9-458c-b49c-a3860ef526e4" />
+        <useCaseShapeMoniker Id="d86695ab-c7f4-4b2f-b9eb-1a414c9e7fd9" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="506431d9-2102-4ea1-b2e8-1bca36a9036e" absoluteBounds="5.5, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2b2ae625-9756-45d0-ab7a-af9efd857efe" LastKnownName="Modificar Reserva" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 2.5); (5.5 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="358b405c-c6b6-4712-9bc6-dd12b2d73488" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="abf7cb8e-e2d9-458c-b49c-a3860ef526e4" />
+        <useCaseShapeMoniker Id="506431d9-2102-4ea1-b2e8-1bca36a9036e" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="a1437c2d-6672-4804-91aa-c62e6f549744" absoluteBounds="5.5, 3.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8f25df10-b3fe-45d5-bb73-0bf014bcdc35" LastKnownName="Eliminar Reserva" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 2.63888888888889); (5.66551763418877 : 3.56417646343821)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7049c5ac-3901-41d9-92c3-01da2adffc86" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="abf7cb8e-e2d9-458c-b49c-a3860ef526e4" />
+        <useCaseShapeMoniker Id="a1437c2d-6672-4804-91aa-c62e6f549744" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Modeling", "Modeling\Modeling.modelproj", "{766DB909-2970-4CD5-8C4E-D9147C710D4D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TeamCatHotel", "TeamCatHotel\TeamCatHotel.xproj", "{C203B3C9-F7B4-4492-A8BC-E8834D2EFDED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C26D7B32-DBCD-4A03-A7F2-15816E266541}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TeamCatHotel.test", "test\TeamCatHotel.test\TeamCatHotel.test.xproj", "{1F268B94-23D2-4D2B-BEE2-2618AC530E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelingLib", "ModelingLib\ModelingLib.csproj", "{1793E9E2-B171-4A9F-B431-8A3BAEC0B121}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedUITestProject1", "test\CodedUITestProject1\CodedUITestProject1.csproj", "{EC269F30-0E37-4CFD-BCE5-8AFD6107D0BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{766DB909-2970-4CD5-8C4E-D9147C710D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766DB909-2970-4CD5-8C4E-D9147C710D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766DB909-2970-4CD5-8C4E-D9147C710D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C203B3C9-F7B4-4492-A8BC-E8834D2EFDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C203B3C9-F7B4-4492-A8BC-E8834D2EFDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C203B3C9-F7B4-4492-A8BC-E8834D2EFDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C203B3C9-F7B4-4492-A8BC-E8834D2EFDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F268B94-23D2-4D2B-BEE2-2618AC530E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F268B94-23D2-4D2B-BEE2-2618AC530E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F268B94-23D2-4D2B-BEE2-2618AC530E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F268B94-23D2-4D2B-BEE2-2618AC530E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1793E9E2-B171-4A9F-B431-8A3BAEC0B121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1793E9E2-B171-4A9F-B431-8A3BAEC0B121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1793E9E2-B171-4A9F-B431-8A3BAEC0B121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC269F30-0E37-4CFD-BCE5-8AFD6107D0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC269F30-0E37-4CFD-BCE5-8AFD6107D0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC269F30-0E37-4CFD-BCE5-8AFD6107D0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC269F30-0E37-4CFD-BCE5-8AFD6107D0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F268B94-23D2-4D2B-BEE2-2618AC530E96} = {C26D7B32-DBCD-4A03-A7F2-15816E266541}
+		{EC269F30-0E37-4CFD-BCE5-8AFD6107D0BC} = {C26D7B32-DBCD-4A03-A7F2-15816E266541}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://teamcat.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Modeling\\Modeling.modelproj
+		SccProjectName1 = Modeling
+		SccLocalPath1 = Modeling
+		SccProjectUniqueName2 = TeamCatHotel\\TeamCatHotel.xproj
+		SccProjectName2 = TeamCatHotel
+		SccLocalPath2 = TeamCatHotel
+		SccProjectUniqueName3 = test\\TeamCatHotel.test\\TeamCatHotel.test.xproj
+		SccProjectTopLevelParentUniqueName3 = TeamCat.sln
+		SccProjectName3 = test/TeamCatHotel.test
+		SccLocalPath3 = test\\TeamCatHotel.test
+		SccProjectUniqueName4 = ModelingLib\\ModelingLib.csproj
+		SccProjectName4 = ModelingLib
+		SccLocalPath4 = ModelingLib
+		SccProjectUniqueName5 = test\\CodedUITestProject1\\CodedUITestProject1.csproj
+		SccProjectTopLevelParentUniqueName5 = TeamCat.sln
+		SccProjectName5 = test/CodedUITestProject1
+		SccLocalPath5 = test\\CodedUITestProject1
+	EndGlobalSection
+EndGlobal

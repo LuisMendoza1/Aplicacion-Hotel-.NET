@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="90b007b8-5e7d-4b54-a2a0-daab7bcdc00c" name="CU-GestionarNotas" linkedPackageId="bf3f54b4-5174-47a1-a338-d56aa95c61dd" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1290ccff-6b25-400d-9bca-7830bc55a6d2" name="RRHH" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5aee2457-5a35-4081-bdb4-f284eb0a4af4" />
+        <targetEnds>
+          <association Id="8461b720-cd87-469c-ae5d-f0f784bae641" isDerived="false" sourceEndRoleName="RRHH" targetEndRoleName="Buscar Notas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f7cf0e5f-5041-48c5-acf4-84a00b76ad09" LastKnownName="Ver Notas" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3227fe3f-70f2-45da-9180-7a6e44041e30" name="RRHH" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd9651d7-79a5-4b85-9b9a-37ea76fd1776" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dfec2b60-03f3-481a-b1a2-75caabdcbbb2" name="Buscar Notas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c7305ef-9dfb-4ea8-ade1-1bf894da43d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6586559c-bd60-42fe-85e9-9ffb75c78761" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0314b620-2cac-442e-ab6e-b36a3f0082bf" name="Alta Nota" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9778ca5a-bb35-4b0e-aba0-87c3a3f5fd65" />
+        <extendedCases>
+          <extend Id="ebc40ff4-ec56-4b1e-96e4-b896fabdebf8">
+            <useCaseMoniker Id="f7cf0e5f-5041-48c5-acf4-84a00b76ad09" LastKnownName="Ver Notas" />
+            <elementDefinition Id="9848d841-3c66-4809-8d84-38ab78ecaee4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f7cf0e5f-5041-48c5-acf4-84a00b76ad09" name="Ver Notas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e16a1d3-3cb4-436d-85e0-b598f3fda977" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d3b6a85-9e30-470e-be4e-143f46fadd83" name="Modificar Nota" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d64207fb-7265-40b9-8a06-df8cc44f1b88" />
+        <extendedCases>
+          <extend Id="4fb0f0c4-5682-4e34-ab5c-03e268fc2db5">
+            <useCaseMoniker Id="f7cf0e5f-5041-48c5-acf4-84a00b76ad09" LastKnownName="Ver Notas" />
+            <elementDefinition Id="efc833b6-0da1-4c97-a471-e7df4b357f95" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dc0575ea-fea6-4d1f-a69b-d01882828eaa" name="Eliminar Nota" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="882dc8a6-757f-4c09-88be-18c2149e721a" />
+        <extendedCases>
+          <extend Id="1dda7ed7-0628-4def-9f93-0e9a4b4af182">
+            <useCaseMoniker Id="f7cf0e5f-5041-48c5-acf4-84a00b76ad09" LastKnownName="Ver Notas" />
+            <elementDefinition Id="14d7e941-817f-417e-ae23-b5030b2319a2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="bf3f54b4-5174-47a1-a338-d56aa95c61dd" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9772795e-5b08-4d7f-b591-01cf4610d3e6">
+        <profileInstance Id="f71ce8d9-81d8-4a5d-b7c7-15709944ca48" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d050a2c6-ed09-45a2-b0c4-651e4332e788">
+        <profileInstance Id="8245367d-6729-4bed-86b3-be2fd94e3d1f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

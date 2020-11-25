@@ -1,0 +1,50 @@
+@model TeamCatHotel.Models.Servicio
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Servicio</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="idServicio" />
+        <div class="form-group">
+            <label asp-for="descripcion" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="descripcion" class="form-control" />
+                <span asp-validation-for="descripcion" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="nombre" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="precio" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="precio" class="form-control" />
+                <span asp-validation-for="precio" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

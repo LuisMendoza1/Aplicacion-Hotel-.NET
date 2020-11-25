@@ -1,0 +1,127 @@
+﻿@model TeamCatHotel.Models.PedidoViewModel.ProveedoresViewModel
+
+@{
+    ViewData["Title"] = "Seleccionar Proveedor";
+}
+<br />
+<br />
+<br />
+<h2>Selecionar Proveedor</h2>
+<h3>Información de los proveedores:</h3>
+  
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="SelectProveedor" method="post">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Proveedor
+                </th>
+                <th>
+                    Pais
+                </th>
+                <th>
+                    Provincia
+                </th>
+                <th>
+                    Localidad
+                </th>
+                <th>
+                    Correo Electronico
+                </th>
+                <th>
+                    Direccion
+                </th>
+                <th>
+                    Numero de Cuenta
+                </th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            @if (Model.proveedores.Count() == 0)
+            {
+                <tr>
+                    <td>
+                        <p>No hay proveedores que mostrar</p>
+
+                    </td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model.proveedores)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nombre)
+                            <input type="hidden" name="nombreProveedor" value="@item.nombre" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.pais)
+                            <input type="hidden" name="paisProveedor" value="@item.pais" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.provincia)
+                            <input type="hidden" name="provinciaProveedor" value="@item.provincia" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.localidad)
+                            <input type="hidden" name="localidadProveedor" value="@item.nombre" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.correoElectronico)
+                            <input type="hidden" name="correoProveedor" value="@item.localidad" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.direccion)
+                            <input type="hidden" name="direccionProveedor" value="@item.direccion" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.numeroCuenta)
+                            <input type="hidden" name="numeroProveedor" value="@item.numeroCuenta" />
+                        </td>
+
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    @if (Model.proveedores.Count() == 0)
+    {
+
+        <p>No hay proveedores.</p>
+
+    }
+    else
+    {
+
+        <label for="Name">Seleccionar un proveedor:</label>
+        <select asp-for="idProveedor" class="form-control">
+            
+            @foreach (var item in Model.proveedores)
+            {
+                <option value=@item.idProveedor>@item.nombre </option>
+            }
+        </select>
+
+        <div>
+           
+            <br />
+        </div>
+
+        <p>
+
+        </p>
+        <button type="submit" name="boton" class="btn btn-primary" a href="SelectProductos" target="_self"> Seleccionar Productos</button>
+    }
+
+    
+    
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

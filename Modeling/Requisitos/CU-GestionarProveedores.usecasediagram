@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="82b040bc-c6a3-42c3-8f8c-9a066737cb44" name="CU-GestionarProveedores" linkedPackageId="2a4f5da6-e3fe-49bb-b374-bc8c9f196ac3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3e8f3106-1806-463e-90ad-907ba6027731" name="Encargado de Almacen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb332339-d63e-43d9-bf0d-d702cfff4289" />
+        <targetEnds>
+          <association Id="cab7eca3-4f5a-49fd-9438-b84431f11879" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Añadir proveedor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c75e400b-3972-4daf-a375-e9b3f1a38145" LastKnownName="Alta Proveedor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e833706-997f-47d5-ab06-7fee56daf7d3" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93db0265-faa8-4fd2-83b5-21f4bdc88571" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75bade4e-a3a1-4eb1-8b12-517d65e2f465" name="Añadir proveedor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="42414418-cb0f-470c-9ced-7d46a3143d9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7508cb6-7d1e-499c-9ebe-101edfeba386" />
+          </association>
+          <association Id="b504ba08-ecc0-4535-992e-3883cfeb566a" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Buscar proveedor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5f8306a0-7c6e-48f6-be30-09b6b77742a5" LastKnownName="Buscar Proveedor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ed016f7-59b5-44b3-831c-5d1725c3b599" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="efc01186-5dbf-4ef8-b570-f05ea74a9bf5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb52d276-4061-4f36-9b06-39efe10720e7" name="Buscar proveedor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="809ea805-3c52-4596-b306-f0f43de359f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43ef10e1-4c46-4fda-9e34-3c661bcc2765" />
+          </association>
+          <association Id="b2e5f2a7-b2d8-4af1-9cf1-40716bbb777d" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Listar productos asociados" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c7c49614-e685-4cc6-a3f6-15414f090ea3" LastKnownName="Listar Productos Asociados" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d7fd0ff-77ca-4d3d-b592-83e53cd139ce" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="448bd4a1-3d56-41e8-bc42-f431505bda12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="214e6653-22c9-4b6f-bba4-1547bf5818a3" name="Listar productos asociados" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8140c7ab-75c7-45c9-b867-2f18d95fb555" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ffa8f7a6-42dc-494a-a975-06aed0e612b1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c75e400b-3972-4daf-a375-e9b3f1a38145" name="Alta Proveedor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d7ff907-9904-460c-8424-05cbc928302a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="775d4ced-6dc2-4ebf-9d3f-a41b957fd45e" name="Eliminar Proveedor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88b1286e-acfd-4f1c-93e0-7a0aa8303a7c" />
+        <extendedCases>
+          <extend Id="7bf164ea-5f44-47bd-b41c-ab4edb69237b">
+            <useCaseMoniker Id="5f8306a0-7c6e-48f6-be30-09b6b77742a5" LastKnownName="Buscar Proveedor" />
+            <elementDefinition Id="74556f25-56ea-4639-a5fe-d8bc6fb6cdf4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="045461f1-257b-4839-8e4c-4dc2b1c4073c" name="Modificar Proveedor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1d49f81-519f-45e5-992d-797f52b4a92a" />
+        <extendedCases>
+          <extend Id="c69ea176-8ab0-4678-a465-f466b99a905b">
+            <useCaseMoniker Id="5f8306a0-7c6e-48f6-be30-09b6b77742a5" LastKnownName="Buscar Proveedor" />
+            <elementDefinition Id="e9c21498-4134-475d-8fbd-3497f1dfcfc6" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5f8306a0-7c6e-48f6-be30-09b6b77742a5" name="Buscar Proveedor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b640db79-a518-4844-a195-76f45957b14a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7c49614-e685-4cc6-a3f6-15414f090ea3" name="Listar Productos Asociados" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9304ced-dbb1-4027-9113-2ce92dd65ed7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2a4f5da6-e3fe-49bb-b374-bc8c9f196ac3" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bba83b36-33b6-4f5f-9511-c46e2a89d50d">
+        <profileInstance Id="0ed6bb48-300a-4402-85b2-d7dd27327ce5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6c00bff5-e7aa-4c3c-a27b-8a87958eb4e4">
+        <profileInstance Id="eb11ca12-2ac5-450b-9501-b1a8e6d4093a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

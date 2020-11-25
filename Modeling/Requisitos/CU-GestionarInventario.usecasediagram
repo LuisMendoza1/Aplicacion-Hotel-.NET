@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b40b9a07-679a-4885-8545-a3dced5df149" name="CU-GestionarInventario" linkedPackageId="f7af90ca-9293-4282-86ab-14f96a5700b2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d7404a2b-cbff-4ee5-b650-bcbd012ffa2c" name="Encargado de Almacen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb332339-d63e-43d9-bf0d-d702cfff4289" />
+        <targetEnds>
+          <association Id="cde2dd30-4750-4523-985a-e0cd2c28c0be" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Hacer pedido" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="762b0a9b-9fc9-4d11-8a6b-3111dbe85313" LastKnownName="Hacer Pedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65039b85-1c86-461a-b775-9be99391405c" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="48284e35-1c2c-44fe-9807-aabf6642187c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38876159-572a-486e-b3d2-26e68eda088e" name="Hacer pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5fa9d0c0-91e3-4aca-b5ac-b852fe1b0fd5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="597d1a53-cd00-46a1-b710-7fa9b8588a6e" />
+          </association>
+          <association Id="39635a32-22df-4116-804a-77205aaa12ad" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Buscar producto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4b694ec7-fccd-4c6e-a137-670248e6ac9b" LastKnownName="Buscar Producto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="497e8e2f-9021-4080-bf40-f1f984425196" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7a0db165-4c6b-46da-b466-08bf1ba77090" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72165b10-85c6-48a9-9638-1d9e5c9f1f1f" name="Buscar producto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a079933-f6d3-40b0-a36a-71d2bf1b9750" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="133898dc-3a12-42d5-ab54-d7cf3d916e72" />
+          </association>
+          <association Id="4308903e-e9fb-4794-9849-7f18a9417a33" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Buscar pedido" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bb0ac0b6-2779-485c-b760-b7d60451395a" LastKnownName="Buscar Pedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b3136a2-81cc-4d6b-a5b7-1f0ccd67b431" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d5acefa6-e606-4fbc-9b22-705c4edfac5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ff6c715-e4ec-46a1-8384-773d2dc3b621" name="Buscar pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a314b01-21cf-4b9e-93ed-3687578e999a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="46669715-dc05-41a1-adca-4cada4973d58" />
+          </association>
+          <association Id="3fff3430-3e64-4966-8268-8d76b797d04f" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Añadir producto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cb23b648-7c1e-40a8-95fe-b5e736b2975e" LastKnownName="Alta Nuevo Producto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="048568bc-af99-4640-9095-036802f17fa3" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a66b4c61-b3ff-4453-b6ae-74c92012f060" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="825c541a-9061-44ec-bed5-fd9d540b5494" name="Añadir producto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="37a25654-e833-40cd-9ef4-3b800aeec3f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33e8ff9c-eacd-4d00-80dd-61a2d32028b5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="762b0a9b-9fc9-4d11-8a6b-3111dbe85313" name="Hacer Pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b89cdc6a-6043-4aeb-be8c-e9640f4b3211" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bfcdfc9d-2b88-4118-80d6-d1f3d0f06acb" name="Recibir Pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="accfffe8-dfaf-4c48-b0f5-04360db498d9" />
+        <extendedCases>
+          <extend Id="49174748-9cec-406f-a39d-6a7d902a204f">
+            <useCaseMoniker Id="bb0ac0b6-2779-485c-b760-b7d60451395a" LastKnownName="Buscar Pedido" />
+            <elementDefinition Id="3baf9042-2096-402f-b756-6f619f62fc53" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="62ab195c-1e05-439e-b7e6-e09fa26b3673" name="Cancelar Pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c3d7f73-e6f2-43d5-a899-eae013989348" />
+        <extendedCases>
+          <extend Id="ddce3d82-e075-4860-b716-7b1da84fc497">
+            <useCaseMoniker Id="bb0ac0b6-2779-485c-b760-b7d60451395a" LastKnownName="Buscar Pedido" />
+            <elementDefinition Id="b3b0c21e-0243-410f-95b1-9e429f67e029" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7feff618-5630-47e1-90cd-77290b5caaa6" name="Modificar Pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4112737-6b2e-4ca7-93dd-8c8f21bfa15a" />
+        <extendedCases>
+          <extend Id="893cb822-39c8-4251-8330-8f91f9d0fab6">
+            <useCaseMoniker Id="bb0ac0b6-2779-485c-b760-b7d60451395a" LastKnownName="Buscar Pedido" />
+            <elementDefinition Id="a959a8a3-d0a9-4287-b149-355b0ff393fa" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4b694ec7-fccd-4c6e-a137-670248e6ac9b" name="Buscar Producto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="79fca13d-4d71-4a71-b09e-dd6dfb42c4a5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cb23b648-7c1e-40a8-95fe-b5e736b2975e" name="Alta Nuevo Producto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed63936a-7ae2-4fd1-b016-81436cc8bf0e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3322554e-3325-4bac-a4b9-11869327b7ea" name="Modificar Producto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a71e8a5d-3eb5-4728-8963-19096ad127db" />
+        <extendedCases>
+          <extend Id="f51ec75c-5594-4659-b5d5-19e0b80c4511">
+            <useCaseMoniker Id="4b694ec7-fccd-4c6e-a137-670248e6ac9b" LastKnownName="Buscar Producto" />
+            <elementDefinition Id="6be10fd1-d81e-490b-9629-7149822d2b19" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bb0ac0b6-2779-485c-b760-b7d60451395a" name="Buscar Pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b4c1f7f-d9fe-4271-912a-4d1fc5caeceb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f7af90ca-9293-4282-86ab-14f96a5700b2" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ccc427eb-9500-448b-9e7e-26a2defdf5d5">
+        <profileInstance Id="c2e2ae6a-87b0-40ea-ac73-2a88e8878c60" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="31ebb5c7-4ba0-4930-bd18-0d6da1d4d647">
+        <profileInstance Id="ad863568-7dae-45a5-8a6c-e3598871d6b5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4dc174f3-89ed-4a5b-99ba-7fb27fd229a6" name="CU-GestionarClientes" linkedPackageId="d0491896-1ca1-4301-b960-53e6461556a7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="83923ca0-214f-471e-8106-f4e218fa6d0f" name="Recepcionista" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd16a4d-f4fe-4ca7-9237-416418fa8160" />
+        <targetEnds>
+          <association Id="4499e8c1-20b6-4229-9c6b-7eddd62328f8" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8c82c14a-6375-404e-b93a-ed3aabee5d96" LastKnownName="Crear Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2e477dc-f167-49c0-8109-bdbd0ed03d99" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="64861d41-c30f-45c7-adcf-fb9232961bd6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="faf4bc73-48bb-4644-9710-b6995ce54f94" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b286d90b-a994-4826-9c81-57d91b389cf9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f57914b9-1a4a-44c5-ab5b-01ad9ce684ae" />
+          </association>
+          <association Id="004bf6b3-aac1-468b-8b9c-f626bcb9964a" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dac95193-7e42-427a-93e0-8ccf0d1e0100" LastKnownName="Modificar Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce285e76-dafd-43c5-b8c9-6f74a14d66a6" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ca53261-a03a-439d-bd34-9f6614d6295a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea54f926-fd67-44d8-a6bb-e4bd5c1165d9" name="UseCase2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b5d2befe-ca2c-47ba-a212-c2af51770f48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d6a01b56-3e45-4563-83fe-c61ddd9f1fca" />
+          </association>
+          <association Id="4038c0f2-d66b-41ea-9086-c13e40460a49" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="UseCase3" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="30c7f233-b806-48b1-94e2-7f74792bddd8" LastKnownName="Eliminar Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8097454d-5f3c-4e3c-935b-1b3f03e0a6ce" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4149fd7e-99b4-44d2-af23-72daa5b16e78" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1993cc8-9289-43cb-8f11-934b2ddb6a21" name="UseCase3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6a29d09-69e7-457d-ade5-63f3214388be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7c2247d-d443-47e3-b57d-3d5c064841c4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8c82c14a-6375-404e-b93a-ed3aabee5d96" name="Crear Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5829d5e9-4382-4c4d-98e9-035f51adec67" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dac95193-7e42-427a-93e0-8ccf0d1e0100" name="Modificar Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76f3f519-b3c9-432f-9ccc-a75c9c5ae05a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="30c7f233-b806-48b1-94e2-7f74792bddd8" name="Eliminar Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="609ff011-0800-4cb9-b19e-44c6a96743f2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d0491896-1ca1-4301-b960-53e6461556a7" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a08d6f0c-9beb-4971-b231-f09b8ec517ed">
+        <profileInstance Id="cc74e23b-5630-4065-976a-0e5f620ae81e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2004b8f0-abb2-4df5-9be7-f6b74096ad75">
+        <profileInstance Id="95cd29d4-ef94-493c-be6e-48324aa2fbca" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

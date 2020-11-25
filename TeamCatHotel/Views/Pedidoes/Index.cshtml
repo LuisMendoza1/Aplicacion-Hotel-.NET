@@ -1,0 +1,45 @@
+@model IEnumerable<TeamCatHotel.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<br />
+<br />
+<h2>Pedidos confirmados</h2>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Fecha emision
+            </th>
+            <th>
+                Fecha recepción
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaEmision)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaRecepcion)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.idPedido">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idPedido">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idPedido">Delete</a>
+            </td>*@
+        </tr>
+
+}
+    </tbody>
+</table>
+<a asp-action="SelectProveedor" class="btn btn-primary" asp-controller="Pedidoes">Hacer otro pedido</a>

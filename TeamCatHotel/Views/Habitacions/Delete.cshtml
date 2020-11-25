@@ -1,0 +1,52 @@
+@model TeamCatHotel.Models.Habitacion
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Habitacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.aforo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.aforo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.localizacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.localizacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ocupada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ocupada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

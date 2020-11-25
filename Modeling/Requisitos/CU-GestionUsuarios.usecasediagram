@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bf3b4890-872b-4f1c-8aa3-40ca4339dd36" name="CU-GestionUsuarios" linkedPackageId="7f1822ec-ba1f-474c-9a49-bcb069c4faa2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0b37751c-4c36-4943-addf-9d1fe331c38a" name="RRHH" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5aee2457-5a35-4081-bdb4-f284eb0a4af4" />
+        <targetEnds>
+          <association Id="e5f7837d-ac7e-4b19-9bb7-89b2d9a0eaba" isDerived="false" sourceEndRoleName="RRHH" targetEndRoleName="Añadir Usuario" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1ff31e7c-fe93-4c3a-a323-15c507ee7023" LastKnownName="Añadir Usuario" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e2ada46-4d54-429e-9434-78f787982425" name="RRHH" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4812f620-75b0-4a34-96a6-423161730f65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c97e36b7-28c9-4e2d-8cc3-8f4a23f4d765" name="Añadir Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="832cceb4-3370-4464-9411-fc31a9675a16" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e35c71bd-9f46-4aa2-b116-d85ccfbda27b" />
+          </association>
+          <association Id="9a702918-d60c-42cf-a4f1-411c9214be4d" isDerived="false" sourceEndRoleName="RRHH" targetEndRoleName="Eliminar Usuario" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="82e1f18d-70fc-41e9-9060-e05deccf50f9" LastKnownName="Eliminar Usuario" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="092d538e-ecd4-46e7-a7ca-8ce86f913e68" name="RRHH" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a925f89-3441-4931-a5f6-5100127188cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d0f719a-63a5-4114-9e3f-40c4a81f9190" name="Eliminar Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6486518-3ad8-4dc1-9d49-8a1680382654" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c92c7bfe-9938-4eaa-b462-fa4c9d93a3b2" />
+          </association>
+          <association Id="58b1dbb2-1f82-4248-a979-61cbe944c087" isDerived="false" sourceEndRoleName="RRHH" targetEndRoleName="Modificar Usuario" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="59f97363-c916-44f6-82c2-6246efb6f0d6" LastKnownName="Modificar Usuario" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c56a8337-9a3a-4bb1-9d18-bb1b5982ba1e" name="RRHH" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="92836385-19aa-40fb-95d4-92438e2ebced" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1fceec22-4860-487a-85a3-55db19f7f279" name="Modificar Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="03345d44-554b-4641-af2f-732de265bfae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a1028e91-9105-41e7-b2a1-4a279b1c024c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1ff31e7c-fe93-4c3a-a323-15c507ee7023" name="Añadir Usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8b42087c-88fd-4575-ba84-823b6714c9a2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="82e1f18d-70fc-41e9-9060-e05deccf50f9" name="Eliminar Usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b7ce02b-5ace-4353-b279-2d6789b0cb8d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="59f97363-c916-44f6-82c2-6246efb6f0d6" name="Modificar Usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d222d49f-d004-4407-bacf-02ba53e20b55" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9145745a-d853-46e8-9774-08b3bb11138e" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36a10f1c-5df3-4a06-a27f-dea28f5a9690" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ca49e508-9ffc-4a15-af47-02509fc51e19" name="Logout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e40ef87-d063-469e-acde-90f7e64001c8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9184d84c-cf89-4304-862d-cd1771b6e992" name="Persona" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d2d115c-e00b-49a4-bb5d-b790e706eae8" />
+        <targetEnds>
+          <association Id="7fcb5b65-4a42-4e7f-8b94-51235a6989bc" isDerived="false" sourceEndRoleName="Persona" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9145745a-d853-46e8-9774-08b3bb11138e" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4409f23-ae2b-40b4-87ed-446a9e94ca6e" name="Persona" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b9fa7b50-b06e-4de3-9702-b0921ff4067d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5adedfa7-50a6-495d-8538-87970a5b5bdc" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="241960f9-8b11-4941-888d-8a2ab80dc7b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="81df4894-0b3f-447c-b2b4-7d16b48b34b5" />
+          </association>
+          <association Id="f38ef4d0-ee9f-45d3-8e28-11f43584cbe4" isDerived="false" sourceEndRoleName="Persona" targetEndRoleName="Logout" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ca49e508-9ffc-4a15-af47-02509fc51e19" LastKnownName="Logout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61e4ba5c-f413-45eb-bbd6-472f2694f99d" name="Persona" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2aae56c7-7d13-4df8-a0a0-8edb29e94043" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="deff700b-cb6c-41fb-a13b-ed98fc6c1d1d" name="Logout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0eaca52f-d664-43b2-9703-fae09192bdc4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5f14f27-8560-45db-82f6-391634da96a5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="7f1822ec-ba1f-474c-9a49-bcb069c4faa2" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e2464584-5930-4038-9f0f-6106e67154bc">
+        <profileInstance Id="7d35fb22-659e-4e57-98bd-cfcbabc0bac6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f691ef75-b9e3-4a4a-9202-0aea746eeada">
+        <profileInstance Id="658294d7-371c-41b4-9d62-b53305172691" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

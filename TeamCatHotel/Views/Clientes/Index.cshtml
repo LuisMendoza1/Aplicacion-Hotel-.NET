@@ -1,0 +1,103 @@
+@model IEnumerable<TeamCatHotel.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Indice Cliente";
+}
+
+<h2>Indice</h2>
+
+<p>
+    <a asp-action="Create">Crear Nuevo</a>
+</p>
+
+<form asp-controller="Clientes" asp-action="Index" method="get">
+    <p>
+        NIF: <input type="text" name="NIF">
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codigoPostal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correoElectronico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.localidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nif)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provincia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numeroTarjeta)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigoPostal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correoElectronico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.localidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nif)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numeroTarjeta)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idPersona">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idPersona">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idPersona">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

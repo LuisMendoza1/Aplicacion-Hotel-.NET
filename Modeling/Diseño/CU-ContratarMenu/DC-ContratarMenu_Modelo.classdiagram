@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="55cfba91-0bde-41d9-b64d-80a0fae73069" name="DC-ContratarMenu_Modelo" linkedPackageId="8d4d3c91-4589-40b5-812a-69c01bf30260" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="647619d1-775f-49a7-bcc3-8896098a12fd">
+      <profileInstance Id="716dfcc8-528d-46a6-8736-95f8c473bde3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="15628e8c-c7f7-41d7-8758-de383113d96a">
+      <profileInstance Id="b98647bc-454d-4085-aee9-f837bfc2c80b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f747fbb7-796f-422a-b205-45fe09a436d4" name="Reserva" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd559255-3243-46e5-ae2c-9a395e359c59" />
+        <ownedAttributesInternal>
+          <property Id="e345ea05-b0b9-4052-89a9-d184c8dfce11" name="Fecha inicio" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="516c696d-ae2a-4f08-bd33-21c727e307eb" />
+          </property>
+          <property Id="dca5dbf3-4a62-4c8f-840a-cdacd5fc0160" name="Fecha fin" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8265e892-f583-4e55-a22c-7294087ffe52" />
+          </property>
+          <property Id="76afb66e-a823-4d83-81b5-286d75818198" name="Fecha realización" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c4b14038-7828-4a24-ba8a-7011a1ab6697" />
+          </property>
+          <property Id="79d1ae3a-7b2d-4d63-aa67-f5f72b707b02" name="Comentarios" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8d2325a-6c2a-471d-b887-5f1c77d25b7f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0b3aaed4-8662-46ee-bb9f-137dce40751c" name="Menú" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6682534d-0313-42db-9a77-0d5b8fb33f0b" />
+        <ownedAttributesInternal>
+          <property Id="2bc797b9-b066-4244-a591-2b65249020e2" name="Horario" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8968723a-c139-4a45-b8dd-a4eae5921d75" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bfce5779-7ad3-4e0c-9138-370457a9dc5c" name="Servicio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="64c4eb2c-9226-49ac-8173-a987835c5ed4" />
+        <ownedOperationsInternal>
+          <operation Id="3591a21f-d910-40c3-a564-f2d967278632" name="ServiciosDisponibles" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f1893d1e-a87a-4e44-a845-0d0c03b82d83" />
+          </operation>
+          <operation Id="0d6b7064-1e81-41b1-840a-6102f72d24aa" name="ConfirmarServicio" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="521e918f-7c91-4060-ab96-dedb20d93945" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="23e795a6-749c-4212-bd27-275cae76ec16" name="id" direction="In">
+                  <elementDefinition Id="87a60f2d-4324-4985-839f-6ba6056e1cf0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="75837f2b-c613-440a-888e-80fb33c218a4" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="75837f2b-c613-440a-888e-80fb33c218a4" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="62ba2bb1-6e72-4b6a-a29f-c020a8b73568" name="Linea de factura" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94a552b6-3217-4df4-b2b7-e2adb312f4be" />
+        <ownedAttributesInternal>
+          <property Id="19f59a1f-e0b7-49f8-8e84-ef8c1d76a1df" name="Cantidad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="072a1efc-0406-4575-ba2f-98a1e3f7e3bb" />
+          </property>
+          <property Id="c0ae9a4e-0134-4562-862c-60eff7e8eb23" name="Precio" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dff89ab6-9a9f-414e-849b-5e6d817185d4" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b6a4333f-d33d-4eb2-bd98-08ea407f5452" name="GuardarLineaFactura" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9ca67373-f50e-4489-97af-629573d48897" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a946267e-e6c7-4491-b783-0c0f2c4a3f0c" name="nombre" direction="In">
+                  <elementDefinition Id="469161e2-ec29-4e36-9a0d-1981cab22619" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7a049b7a-e863-4e2f-934c-b97bd36b9246" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f928cbe3-9377-43bf-b40d-8f09d2b31947" name="cantidad" direction="In">
+                  <elementDefinition Id="b43ee463-2138-4c67-8881-cdbf9f09664b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="75837f2b-c613-440a-888e-80fb33c218a4" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc15c419-f80e-47a6-8664-61a9b4e5d9d9" name="precio" direction="In">
+                  <elementDefinition Id="128ed804-5877-4d33-aa81-1e5d5c823dbd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="75837f2b-c613-440a-888e-80fb33c218a4" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="54dbc8df-cea1-4cb0-8c2e-d3f8eede93c0" name="idFactura" direction="In">
+                  <elementDefinition Id="334d39b5-1a15-47ee-9c8a-3ed04c201819" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="75837f2b-c613-440a-888e-80fb33c218a4" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7a049b7a-e863-4e2f-934c-b97bd36b9246" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8d4d3c91-4589-40b5-812a-69c01bf30260" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,87 @@
+@model TeamCatHotel.Models.CreateProductoProveedor
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div>
+        <table>
+
+            @if (Model.Productos.Count() == 0)
+            {
+                <tr><td colspan="3">No hay productos que mostrar</td></tr>
+            }
+            else
+            {
+                @foreach (var item in Model.Productos)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.idProducto)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nombre)
+                        </td>
+                    </tr>
+                }
+                @foreach (var item in Model.proveedores)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.idProveedor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nombre)
+                        </td>
+                    </tr>
+
+                }
+            }
+
+
+        </table>
+
+    </div>
+    <div class="form-horizontal">
+        <h4>ProductoProveedor</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="precio" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="precio" class="form-control" />
+                <span asp-validation-for="precio" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="idProducto" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idProducto" class="form-control" />
+                <span asp-validation-for="idProducto" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="idProveedor" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idProveedor" class="form-control" />
+                <span asp-validation-for="idProveedor" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

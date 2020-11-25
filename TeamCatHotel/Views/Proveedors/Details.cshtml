@@ -1,0 +1,66 @@
+@model TeamCatHotel.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Proveedor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cif)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cif)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.correoElectronico)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.correoElectronico)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.localidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.localidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.numeroCuenta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.numeroCuenta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.provincia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.provincia)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idProveedor">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

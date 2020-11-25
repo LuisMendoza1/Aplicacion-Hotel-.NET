@@ -1,0 +1,56 @@
+@model TeamCatHotel.Models.SolicitaServicioViewModels.ListSolicitarServicioViewModel
+
+@{
+    ViewData["Title"] = "Lista servicios";
+}
+
+<h2>Lista Servicios</h2>
+<h4>Habitacion @Model.numeroHab</h4>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <font style="text-transform: capitalize;">descripcion</font>
+                </th>
+                <th>
+                    <font style="text-transform: capitalize;">nombre</font>
+                </th>
+                <th>
+                    <font style="text-transform: capitalize;">precio</font>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.ListaServicios)
+            {
+                @if(item.nombre!= "Desayuno" && item.nombre!="Comida" && item.nombre != "Cena") { 
+                    <form method="post" asp-action="SelectService">
+                        <input asp-for="idServicio" value="@item.idServicio" hidden="hidden">
+                        <input asp-for="numeroHab" value="@Model.numeroHab" hidden="hidden">
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.descripcion)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.nombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.precio)
+                            </td>
+                            <td>
+                                <input type="submit" value="Seleccionar Servicio" class="btn btn-default" style="background-color: lightsteelblue; color:blue">
+                            </td>
+                        </tr>
+                    </form>
+                }
+            }
+
+        </tbody>
+        
+    </table>
+</div>
+<div><a asp-action="Index" asp-controller="Habitacions" class="btn btn-default">Cancelar</a></div>

@@ -1,0 +1,113 @@
+@model TeamCatHotel.Models.ResevarViewModels.DatosReservaViewModel
+
+@{
+    ViewData["Title"] = "Nueva Reserva: Datos Reserva";
+}
+
+<div>
+    <h2>Cliente</h2>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.apellidos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nif)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nif)
+        </dd>
+    </dl>
+</div>
+
+<h2>Datos Reserva</h2>
+
+<form asp-action="vistaDatosReserva">
+    <div class="form-horizontal">
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="idPersona" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idPersona" class="form-control" />
+                <span asp-validation-for="idPersona" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="nombre" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="apellidos" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="apellidos" class="form-control" />
+                <span asp-validation-for="apellidos" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="nif" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="nif" class="form-control" />
+                <span asp-validation-for="nif" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaInicio" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaInicio" class="form-control" />
+                <span asp-validation-for="fechaInicio" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaFin" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaFin" class="form-control" />
+                <span asp-validation-for="fechaFin" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="regimenComida" class="col-md-2 control-label">Regimen de comidas:</label>
+            <div class="col-md-10">
+                <select class="form-control" asp-for="regimenComida">
+                    <option selected value=1>Media Pension </option>
+                    <option selected value=2>Pension Completa</option>
+                    <option disabled selected>Selecciona</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="comentarios" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="comentarios" class="form-control" />
+                <span asp-validation-for="comentarios" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Continuar" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<div>
+    <a asp-action="Index" asp-controller="Clientes">Volver al indice de los clientes</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

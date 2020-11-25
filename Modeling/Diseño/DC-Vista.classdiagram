@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="39dcb133-0a63-4bf0-9b93-f2fa9a250970" name="DC-Vista" linkedPackageId="fe3641d4-9c1c-4e0f-907c-79a897a3cc55" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="795f6266-f731-4dbb-80eb-41e9a7e522c6" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="f8cb8793-1904-458a-aed6-2c5275b1216d" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c2655d79-4e06-481e-9fbe-c396ce3b3348">
+          <propertyInstance Id="8d84d201-d4ef-4ae5-96ff-99b5d21a7438" name="BaseName">
+            <elementDefinition Id="fd27cbcb-47f6-4cf9-8890-e656d2c338b1" />
+          </propertyInstance>
+          <elementDefinition Id="8fa1c4d6-de20-49bf-be29-0500ad7347d6" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ab14b927-878d-4d93-9dd3-673ce416e154">
+          <propertyInstance Id="f15b8f9a-4918-49ed-835d-6f2d092443c1" name="ClrAttributes">
+            <elementDefinition Id="1fbfdfc2-bc70-4e6f-b383-e4df10ee1481" />
+          </propertyInstance>
+          <elementDefinition Id="9534c564-68c0-4b96-b243-6e6176e64d13" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="52d2dd69-933a-4ed8-b609-3e678da483e1">
+          <propertyInstance Id="94b8b525-7735-46ce-8bb3-d4e2075f7a5e" name="Usings">
+            <elementDefinition Id="c5b0bfd5-6613-4403-8784-e9ab3dc66012" />
+          </propertyInstance>
+          <elementDefinition Id="1fb8046b-9413-418a-b33e-be7e674a346f" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="175d6afe-080b-43cc-b846-ace964509fbe" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="d406e5c5-e9ed-485c-b61b-ac601dffb0f6" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f31fb39e-2c76-4a76-827b-1b0e97b7741e">
+          <propertyInstance Id="85d48f26-9aac-415b-adc7-97b0384409ad" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="c1f80712-e8d9-4870-b6c7-75bea44abbbd" />
+          </propertyInstance>
+          <elementDefinition Id="753f7f80-021b-41ae-954f-fa6ff1a3fcc2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="45dbae21-4240-4493-bf8d-dc585567a441">
+          <propertyInstance Id="04c026ef-0de2-4cf7-b3f7-9ca5bcfc0b8a" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="48820a0a-b15b-4c97-96e1-854cf409c090" />
+          </propertyInstance>
+          <elementDefinition Id="247872af-f482-490b-b944-056aacfb0f5b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="187d33a0-f037-413c-9c2f-3332c8874e9b">
+          <propertyInstance Id="c1b79e01-6aab-4df9-ab1c-7c24025f69ee" name="ProjectPath" value="ClassTemplate=..\ModelingLib\ModelingLib.csproj|EnumTemplate=..\ModelingLib\ModelingLib.csproj|InterfaceTemplate=..\ModelingLib\ModelingLib.csproj|StructTemplate=..\ModelingLib\ModelingLib.csproj">
+            <elementDefinition Id="16743d52-32c4-4b64-a41e-89534b69776e" />
+          </propertyInstance>
+          <elementDefinition Id="d54e5b36-84f0-417a-b0ca-eee2da4ca5cc" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4a208d4b-356d-4d35-bee0-55f8ca31a7d1">
+          <propertyInstance Id="fece71a2-301b-4641-9ced-268eb5040f35" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="44eeb413-b3e4-4809-b793-b89d4a284244" />
+          </propertyInstance>
+          <elementDefinition Id="256f5656-f21b-48c3-b5e5-a6d9c69b680d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="16d28a9b-20a4-4bbe-b74d-67f782ab9ee0">
+          <propertyInstance Id="ec756075-bd63-477b-b51e-29de1b0aab3e" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="13d262d1-bd84-4951-9a55-bd92a3c3eb1f" />
+          </propertyInstance>
+          <elementDefinition Id="933518a9-bfbf-47f0-9a58-7f12201eac7f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8476b81f-6602-48eb-9b66-072af3f15ad6">
+          <propertyInstance Id="2dbf0952-732b-4305-b623-c852c18eb142" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="9305d586-2f3d-4b4f-a1ec-c56017f36aca" />
+          </propertyInstance>
+          <elementDefinition Id="9aee075d-0450-4d8b-aae0-0b544e7427e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3c442705-4fdb-4e27-ac51-b86f8d815ab9">
+          <propertyInstance Id="d59974bb-97df-46c9-a8d8-db1fe78d2b5d" name="Parameters">
+            <elementDefinition Id="661f99aa-7926-4203-b7fe-4464bbe8f961" />
+          </propertyInstance>
+          <elementDefinition Id="dc9d9adc-c4b4-4e83-97c4-58d5a573e577" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="58a9bee2-45f9-482d-9591-154a086ea21e" name="VistaIndexMenuGeneral" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a0787aae-fb70-4eb2-850f-0f055f5deb64" />
+        <targetEnds>
+          <association Id="953ace95-c60f-48fb-b409-1f3b54192835" isDerived="false" sourceEndRoleName="VistaMenuGeneral" targetEndRoleName="VistaHacerPedido" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cf7a3241-a560-4404-b66d-3d81535254e0" LastKnownName="VistaHacerPedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ff7a387-0ed3-4f00-9f2f-1598edbc57a8" name="VistaMenuGeneral" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19c81306-28ca-45e9-bd5d-197404589caa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9821ee6b-4a32-4de7-b5d8-21faab83fefd" name="VistaHacerPedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d36ebf55-bb9c-49eb-8bcc-16bec1d4e8c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd9278c1-3461-4b6f-99b2-0461f8b34135" />
+          </association>
+          <association Id="4ee3048b-f206-4edd-a227-4ec56c96e897" isDerived="false" sourceEndRoleName="VistaMenuGeneral" targetEndRoleName="VistaContratarMenu" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e9512c0a-890e-4d37-8e92-9dd29350fe6b" LastKnownName="VistaContratarMenu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2801adf-20ea-4fba-aa27-7a03832a21f4" name="VistaMenuGeneral" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f3b816a3-1b9c-42cd-b825-c90590459ba3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95708a0f-1152-4529-bb5c-32e71f507182" name="VistaContratarMenu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="08409b6d-59df-4b02-a44b-f1177e972f09" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="477d04f4-e371-4cb0-adca-3e90eea56427" />
+          </association>
+          <association Id="5db372bc-74c7-45ed-be27-00a74eb89dd3" isDerived="false" sourceEndRoleName="VistaIndexMenuGeneral" targetEndRoleName="VistaSolicitarServicio" isLeaf="false" isAbstract="false">
+            <classMoniker Id="fdfc9893-f20d-46e6-9e59-708b1b437b0f" LastKnownName="VistaSolicitarServicio" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ccbcdd0-aef9-400f-b1de-2be533616116" name="VistaIndexMenuGeneral" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="693c107b-49ab-4788-845e-e874f7ff0276" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f71d656-2142-4e6e-99a9-7fe2b8bbc96c" name="VistaSolicitarServicio" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d40de7af-c96f-494a-9e2c-84d20b9717a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b1fce853-6a2c-468b-ab54-6091b749293a" />
+          </association>
+          <association Id="e7970271-be42-44a4-81c4-ab4313a16c76" isDerived="false" sourceEndRoleName="VistaIndexMenuGeneral" targetEndRoleName="VistaIndexCliente" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d83356b6-49fd-4730-a164-163a128d1ae5" LastKnownName="VistaIndexCliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a69cb020-4008-4ec8-88eb-aba1c72992bf" name="VistaIndexMenuGeneral" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="04c62c00-9166-429b-b9d8-e3bc70fa4a1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6588a990-d606-43b4-ab12-40b895349d50" name="VistaIndexCliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d88899bd-cc44-4c22-8ac3-a237f0544c00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa2acaa1-f26a-4b78-8b59-83f1b1b89e76" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="19d843c0-6450-4b20-81a7-df5ba4abe1da" name="VistaResumenReserva" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="35a9d884-c102-4309-9395-b49dcf200778" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cf7a3241-a560-4404-b66d-3d81535254e0" name="VistaHacerPedido" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d85edc8-b7db-4ed0-b3e7-1ffc49828bd0" />
+        <targetEnds>
+          <association Id="018fc4f4-7892-4d32-b62a-5440f8abcaec" isDerived="false" sourceEndRoleName="VistaHacerPedido" targetEndRoleName="VistaResumenPedido" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f61a9bc1-93d3-404e-903a-c09249ef7999" LastKnownName="VistaResumenPedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ade9a18c-789d-4ccf-93a6-31586a2b07a6" name="VistaHacerPedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b388ea3-53cb-41a1-bfbd-e91f9fc74dad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58adc1a8-8447-4b41-b26d-4c7b3f5691ec" name="VistaResumenPedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b389c212-f5ea-4380-92a9-a144aecfb570" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2f74b174-32e3-423b-a94a-0a2539f32bc7" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="456bb422-106b-44da-8e1f-549038df7b47" name="mostrarVistaHacerPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="94390ff1-682e-44e3-8a34-e8de778e55e2" />
+          </operation>
+          <operation Id="1a4e8d5b-5dbc-4ec5-b77f-73206d5ca6dc" name="mostrarListadoProductos" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5ab6f33-c9bd-4849-b6c0-ef960708b723" />
+          </operation>
+          <operation Id="65ba36d3-20c2-434d-8d6c-230743fd1aa6" name="mostrarListadoProveedores" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb09dd9c-75d7-4887-8ea9-46b54ba7320c" />
+          </operation>
+          <operation Id="39a92f48-1b09-448c-8876-ea4296413723" name="hacerPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a9f3647-524a-4b22-b177-d94122b6f348" />
+          </operation>
+          <operation Id="b456776a-913c-4d47-8e24-f59dc0c63131" name="mostrarPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f3504871-8095-447d-bc8c-f950c1173cf4" />
+          </operation>
+          <operation Id="258f6291-04b7-4e7a-8f3c-d9f014442ed8" name="obtenerResumenPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="693c7cde-8ce0-4db8-9124-bdf606ec90bb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f61a9bc1-93d3-404e-903a-c09249ef7999" name="VistaResumenPedido" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ed0187ee-0038-4697-9265-b1302082a8b4" />
+        <ownedOperationsInternal>
+          <operation Id="bfe3bc4a-ffb2-4276-999d-38c0c0bdafef" name="mostrarResumenPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a6d6840-75a6-49a7-b676-5f0a783ca192" />
+          </operation>
+          <operation Id="6fe8b818-86c9-4326-a219-4123dfe04609" name="confirmarPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86a5eff0-dc1b-4fb9-83ab-98ecd8a78052" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fdfc9893-f20d-46e6-9e59-708b1b437b0f" name="VistaSolicitarServicio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8e05dbd5-c453-429c-b0c7-0229b3287f48" />
+        <ownedOperationsInternal>
+          <operation Id="84f1faa4-ea5f-4d3e-bd5a-05f1727f2e15" name="actualizarVistaSolicitarServicios" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf1e6459-3037-44e4-a5b2-ced975a9977f" />
+          </operation>
+          <operation Id="2d71de12-12c1-4451-af7e-e9ae88994e5a" name="seleccionServicios" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be8fef15-6496-4fc6-9fb4-ed3ea7e2aebb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4872b764-a888-4321-ae9e-d3e0258c5faa" name="idServicios" direction="In">
+                  <elementDefinition Id="eccf5e58-35d2-4a4e-9449-607a78cca78f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="765fa5e0-0cce-4714-8c16-e7a80033a812" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b83ed404-2247-43b4-9fa5-ec8a515a8ec7" name="nombreServicios" direction="In">
+                  <elementDefinition Id="ec7c5253-0f67-4c86-9e15-2699a98a3b41" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ed7ee300-9361-4a37-8c81-b84f4d540e5c" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a6f918dd-27d3-4612-bff7-63df95ddae25" name="fechaReserva" direction="In">
+                  <elementDefinition Id="e1b73468-6ee4-4aa7-bbd9-4f0ece7976cb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf5cef8a-4294-4265-8a89-00796affd7c2" LastKnownName="DateTime" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e58f2f0-03b7-4b43-aaec-077a52c552fa" name="fechaFin" direction="In">
+                  <elementDefinition Id="207e44ce-0afc-4a48-81fc-8015a0520c95" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf5cef8a-4294-4265-8a89-00796affd7c2" LastKnownName="DateTime" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cf931e8f-8a8e-40cc-a863-495c94f84d46" name="duracion" direction="In">
+                  <elementDefinition Id="f0f8bb4f-d442-4b06-835b-b59e09ed3b97" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6b2a9b15-7381-4efc-96d4-3a744b46b279" LastKnownName="DateTime" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bfc30a54-7be6-4cfc-8971-0935ca86c256" name="hora" direction="In">
+                  <elementDefinition Id="230f86d3-4909-46e5-b1f4-a39a191ae1ba" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6b2a9b15-7381-4efc-96d4-3a744b46b279" LastKnownName="DateTime" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="732d8427-fee3-4d50-b61d-94da72612610" name="idProducto" direction="In">
+                  <elementDefinition Id="72a2355f-b8ad-45e9-b8e8-eb07484bfcc2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="765fa5e0-0cce-4714-8c16-e7a80033a812" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b3e464ac-02e0-4ea5-b403-b26a7255daa1" name="nombreProducto" direction="In">
+                  <elementDefinition Id="96cc183c-7fe5-4679-8f99-68de0d1ca6cb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ed7ee300-9361-4a37-8c81-b84f4d540e5c" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="54b92d5e-f4e2-4461-8c9f-b835a6cfaf82" name="Cantidad" direction="In">
+                  <elementDefinition Id="8fec20d2-43fa-47d4-882e-2ec3a8b2f554" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="765fa5e0-0cce-4714-8c16-e7a80033a812" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1a02c95f-58ac-4568-abb6-faea9ddcdc05" name="VistaSeleccionComensales" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b7b2c7cc-2c5e-46ef-a5cc-7e7d2a7fca75" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="765fa5e0-0cce-4714-8c16-e7a80033a812" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e9512c0a-890e-4d37-8e92-9dd29350fe6b" name="VistaContratarMenu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="708037ee-12e5-41d6-88dc-646178b58dd8" />
+        <targetEnds>
+          <association Id="263c553e-ec8a-4733-b8cb-9d753db1b5ef" isDerived="false" sourceEndRoleName="VistaContratarMenu" targetEndRoleName="VistaSeleccionComensales" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1a02c95f-58ac-4568-abb6-faea9ddcdc05" LastKnownName="VistaSeleccionComensales" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="703ebf67-a1b8-4209-a4e4-67dabc4346b7" name="VistaContratarMenu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e04dcef8-b28d-4516-b2e7-c91c1aa4e10c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67081156-4c75-479d-90cc-6409575aa12a" name="VistaSeleccionComensales" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4872e0d-aa5b-46ae-b3d6-e096e0325a05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="decf0856-08cd-4263-bf9b-ccfc8ae021d1" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ed7ee300-9361-4a37-8c81-b84f4d540e5c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bf5cef8a-4294-4265-8a89-00796affd7c2" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="dd1dde8c-cacd-4a7e-8bab-bf4aae88375f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6b2a9b15-7381-4efc-96d4-3a744b46b279" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="a0cde9f6-f7b0-4ba2-9d68-2a8ac04d5482" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d83356b6-49fd-4730-a164-163a128d1ae5" name="VistaIndexCliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e227e64-7da0-4b88-a520-fae011d4751f" />
+        <targetEnds>
+          <association Id="0a01b6a5-3fd1-484b-b2e4-2a1350ff6fb7" isDerived="false" sourceEndRoleName="VistaIndexCliente" targetEndRoleName="VistaDetailsCliente" isLeaf="false" isAbstract="false">
+            <classMoniker Id="047b22fc-fea5-4e9c-9433-fcd56ba56920" LastKnownName="VistaDetailsCliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7ccc883-7240-4ba4-b555-8da16fd91583" name="VistaIndexCliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="57ca02d9-fa5f-499f-9a04-8e72370069a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c96a1984-fc6f-4644-94c0-78013487dd06" name="VistaDetailsCliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76aa8efe-c18b-424d-9963-36bea483dcfc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="692acf5f-6d2f-4f32-b9ec-b8827ab181c6" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="047b22fc-fea5-4e9c-9433-fcd56ba56920" name="VistaDetailsCliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="62dc0c48-a2d4-46d1-bc3f-17636259db43" />
+        <targetEnds>
+          <association Id="25fcfe41-9958-43a8-97a8-c7dc42d161ff" isDerived="false" sourceEndRoleName="VistaDetailsCliente" targetEndRoleName="VistaDatosReserva" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0a035325-0623-4c55-aa6a-ffaf385f132a" LastKnownName="VistaDatosReserva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b85092d-f01d-42de-8988-373efe88457c" name="VistaDetailsCliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="325d2ca0-acf0-4111-bbcc-433699fd4e0d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="655844fc-e60f-4f72-b601-2d15df0d8fbf" name="VistaDatosReserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0b5bceba-8c40-4e3b-af27-e9ece3532b08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7473d62f-725a-48c3-bc4a-7b8445b795b2" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0a035325-0623-4c55-aa6a-ffaf385f132a" name="VistaDatosReserva" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93e7ad95-206b-4e1b-8efc-34879130b91f" />
+        <targetEnds>
+          <association Id="9082bdce-2ac4-4651-bfd9-4e278f923df1" isDerived="false" sourceEndRoleName="VistaDatosReserva" targetEndRoleName="VistaSeleccionHabitacionReserva" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cb791d29-2546-4e90-b8b8-4c245d8b2d6d" LastKnownName="VistaSeleccionHabitacionReserva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c57b51d-4c88-4e39-b4c5-fcc4d940b5f5" name="VistaDatosReserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c4ebf1b6-fb4c-4163-8763-75f2722db035" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e098885-dfe1-4876-803a-e1576a397e8a" name="VistaSeleccionHabitacionReserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ca0a50f4-95f0-4860-892b-f878150e6fa5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3e350c0d-ac51-46c3-a1e8-a1cd40e5a6e4" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cb791d29-2546-4e90-b8b8-4c245d8b2d6d" name="VistaSeleccionHabitacionReserva" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="afa3196d-9c22-4acf-88d1-1a8dd371439b" />
+        <targetEnds>
+          <association Id="14d26e99-92de-4e3d-a3ea-0ab74775ead2" isDerived="false" sourceEndRoleName="VistaSeleccionHabitacionReserva" targetEndRoleName="VistaResumenReserva" isLeaf="false" isAbstract="false">
+            <classMoniker Id="19d843c0-6450-4b20-81a7-df5ba4abe1da" LastKnownName="VistaResumenReserva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05b1969b-6236-4716-ba24-3ab4decdd305" name="VistaSeleccionHabitacionReserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba12a797-9e72-44ba-aff1-3a10d9445fe0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="661e3c87-7f9f-44ef-9dfc-d91a80266514" name="VistaResumenReserva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dc6687ca-6d88-4953-bea4-4d3e61e9cd99" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d110b3c4-0ad4-4f15-b9f5-c7b7e717cbfd" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="fe3641d4-9c1c-4e0f-907c-79a897a3cc55" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4ed36637-e432-4f98-ade7-39fb7385b28b">
+        <profileInstance Id="093cee55-8380-4649-853a-4cb55dda5e6a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="274a344f-fc96-458f-9474-c9fb0bb5b49b">
+        <profileInstance Id="f236bc0c-d21b-49d3-84c9-0bbc7a13c74b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="58470166-10b5-41b7-9b5a-67354014b181">
+        <profileInstance Id="5f98902f-4c8a-4326-a342-f5eca9b98785" name="CSharpProfile">
+          <elementDefinition Id="e19fe24a-e2cf-411d-8b9a-d539d5196c5b" />
+        </profileInstance>
+        <elementDefinition Id="d34311d1-e1c5-4b96-bdb4-13282475ec26" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="77f7310d-61af-4966-9182-64ad9e726eee">
+        <profileInstance Id="c1d81f39-83b0-4fc0-a5ef-1f4f8b1b2faa" name="TextTemplateBindings">
+          <elementDefinition Id="57c742de-5ef3-4238-a377-0c2945567d3e" />
+        </profileInstance>
+        <elementDefinition Id="02cc6bea-deda-451b-a32b-b4459602c34c" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

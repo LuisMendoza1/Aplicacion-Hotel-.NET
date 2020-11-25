@@ -1,0 +1,40 @@
+@model IEnumerable<TeamCatHotel.Models.ReservaHabitacion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Habitacion.numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reserva.idReserva)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Habitacion.numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reserva.idReserva)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idReservaHabitacion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idReservaHabitacion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idReservaHabitacion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

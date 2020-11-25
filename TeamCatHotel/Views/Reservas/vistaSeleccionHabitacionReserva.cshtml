@@ -1,0 +1,243 @@
+@model TeamCatHotel.Models.ResevarViewModels.DatosHabitacionReservaViewModel
+
+@{
+    ViewData["Title"] = "Nueva Reserva: Datos Reserva";
+}
+
+<div>
+    <h2>Cliente</h2>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.apellidos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nif)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nif)
+        </dd>
+    </dl>
+</div>
+
+
+<div>
+    <h2>Reserva</h2>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaInicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaInicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaFin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.regimenComida)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.regimenComida)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.comentarios)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.comentarios)
+        </dd>
+    </dl>
+</div>
+
+<h2>Datos Reserva</h2>
+
+
+<form asp-action="vistaSeleccionHabitacionReserva" method="post">
+    <div class="form-horizontal">
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="idPersona" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idPersona" class="form-control" />
+                <span asp-validation-for="idPersona" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="nombre" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="apellidos" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="apellidos" class="form-control" />
+                <span asp-validation-for="apellidos" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="nif" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="nif" class="form-control" />
+                <span asp-validation-for="nif" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="fechaInicio" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaInicio" class="form-control" value="@Model.fechaInicio" />
+                <span asp-validation-for="fechaInicio" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="fechaFin" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaFin" class="form-control" value="@Model.fechaFin" />
+                <span asp-validation-for="fechaFin" class="text-danger"  />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="regimenComida" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="regimenComida" class="form-control" />
+                <span asp-validation-for="regimenComida" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="comentarios" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="comentarios" class="form-control" />
+                <span asp-validation-for="comentarios" class="text-danger" />
+            </div>
+        </div>
+    </div>
+    <h2>Descuentos disponibles</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Porcentaje
+                </th>
+                <th>
+                    Descripcion
+                </th>
+                <th>
+                    Seleccionar descuento
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Descuentos.Count() == 0)
+            {
+                <tr><td colspan="3">No hay descuentos disponibles en las fechas indicadas</td></tr>
+            }
+            else
+            {
+                @foreach (var item in Model.Descuentos)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.porcentaje)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.descripcion)
+                        </td>
+                        <td>
+                            <input type="radio" name="descuentoSeleccionado" value="@item.idDescuento">
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+
+    <h2>Habitaciones disponibles</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Numero
+                </th>
+                <th>
+                    Precio total
+                </th>
+                <th>
+                    Aforo
+                </th>
+                <th>
+                    Descripcion
+                </th>
+                <th>
+                    Localizacion
+                </th>
+                <th>
+                    Seleccionar habitaciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Habitaciones.Count() == 0)
+            {
+                <tr><td colspan="3">No hay habitaciones disponibles, ERROR</td></tr>
+            }
+            else
+            {
+                @foreach (var item in Model.Habitaciones)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.numero)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.precio)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.aforo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.descripcion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.localizacion)
+                        </td>
+                        <td>
+                            <input type="checkbox" name="habitacionesSeleccionadas" value="@item.numero">
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary">Guardar Reserva</button>
+</form>
+
+<div>
+    <a asp-action="Index" asp-controller="Clientes">Volver al indice de clientes</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d8915e1c-511b-473a-a0e1-92cc9342948e" name="CU-GestionarFacturas" linkedPackageId="bbebf5e4-3de0-4c51-9be8-ec7d66e8917a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0047b2b6-0fc9-4780-9ec9-2c9c6bd41c84" name="Cursar Factura" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="95826fd6-b06a-4460-954b-fa692a176420" />
+        <extendedCases>
+          <extend Id="aa2dd231-01f0-4c63-b457-4af7f9a6f7a3">
+            <useCaseMoniker Id="917ca96d-9ade-486c-b3f7-33adcbc1787b" LastKnownName="Buscar Factura" />
+            <elementDefinition Id="9a1e7b2b-d90f-4328-9a14-06b2351fcfff" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="917ca96d-9ade-486c-b3f7-33adcbc1787b" name="Buscar Factura" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a77dbb62-0547-4da9-b1d2-2d299171f627" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3843f8a2-8a34-4efc-9165-98fd3bf80209" name="Alta Factura Externa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6375d24-436c-4bd6-af1f-7cd0b1e5f172" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b0c14ad0-404c-4770-97ac-56b5bc8e8bcf" name="Gestion Pago Factura Externa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa7d3983-f048-4eaa-8894-639103a837d2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7eff2f98-29e1-4613-bef5-3e143168f391" name="Recepcionista" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd16a4d-f4fe-4ca7-9237-416418fa8160" />
+        <targetEnds>
+          <association Id="bd4def97-a706-4030-9d5b-5dd20d1841ff" isDerived="false" sourceEndRoleName="Recepcionista" targetEndRoleName="Buscar factura" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="917ca96d-9ade-486c-b3f7-33adcbc1787b" LastKnownName="Buscar Factura" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec9e9e46-973b-49df-8fab-06a087246ce6" name="Recepcionista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd14b0f8-e852-4607-af1b-5e7a90eb0d02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="335198d2-e947-4c4a-a19e-fc137d2a49c2" name="Buscar factura" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d6ca224-f088-4038-86db-46963a66493b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="af65aab2-7470-4b07-91f4-4325a7585952" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="32d62e85-9379-4b63-ac0f-975ea69471c9" name="Encargado de Almacen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb332339-d63e-43d9-bf0d-d702cfff4289" />
+        <targetEnds>
+          <association Id="a74183c8-96ad-4c41-b0cf-df2a21afacdc" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Añadir factura externa" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3843f8a2-8a34-4efc-9165-98fd3bf80209" LastKnownName="Alta Factura Externa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16f67165-77be-4fdb-8968-8b82c3dc2d1b" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1cab1f02-a0df-4385-a668-4183474abbb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2f2aa3b-bfa1-428e-9d5a-e7b523eed46f" name="Añadir factura externa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="391194a5-0088-4b2e-a28a-540c2b813199" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3bfebeed-9faa-4c4d-b4be-9025da4e3ae1" />
+          </association>
+          <association Id="c7e35dae-95f2-42ab-b757-6e4288a5581a" isDerived="false" sourceEndRoleName="Encargado de Almacen" targetEndRoleName="Pagar factura externa" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b0c14ad0-404c-4770-97ac-56b5bc8e8bcf" LastKnownName="Gestion Pago Factura Externa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0a87d41-949d-4462-ac63-8744acdd8745" name="Encargado de Almacen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3a2671a0-3b69-459a-b856-1852cd1c5f9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2f8e2c3-44fa-460d-a6b8-f9708129476b" name="Pagar factura externa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ce25aed-0e1d-4f8b-a322-0adcbc8c9c72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0973a36f-b54f-4cd5-9f66-c3669a4ac339" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="bbebf5e4-3de0-4c51-9be8-ec7d66e8917a" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="51dcde93-8d85-493a-b41c-1c5a3e21c6b2">
+        <profileInstance Id="137f1542-b86a-4fbe-86f0-9d83220ebcf6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a9d461a5-b7c7-4421-ba02-1c1ef8da346b">
+        <profileInstance Id="b94ad33c-7a33-4f19-8fa8-c2a94b45aef0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

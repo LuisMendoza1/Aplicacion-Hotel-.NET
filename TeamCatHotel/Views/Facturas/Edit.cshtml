@@ -1,0 +1,51 @@
+@model TeamCatHotel.Models.Factura
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Factura</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="idFactura" />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="abono" />
+                    <label asp-for="abono"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaEmision" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaEmision" class="form-control" />
+                <span asp-validation-for="fechaEmision" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="fechaPago" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="fechaPago" class="form-control" />
+                <span asp-validation-for="fechaPago" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

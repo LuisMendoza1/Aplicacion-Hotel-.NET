@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="0dda898b-8a77-4930-89e7-18a1b78f3f00" name="D-DiagramaPaquetes" linkedPackageId="41e73745-a68c-44a9-ac6f-3fb192e38a2a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b06bb450-5e6d-4194-83b3-c492ec0e4e83">
+      <profileInstance Id="f6edb67b-2e5a-4306-90b9-af2b36ee377f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="696ac0b5-3a04-4f78-82ae-36550359b72c">
+      <profileInstance Id="8cbfacdc-d99b-4d3c-a922-fa31a69bc802" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d7f84ba3-b717-47e8-8425-2e4dfd0dd04e" name="Vista">
+        <elementDefinition Id="24e9f638-cea6-4c1e-9cce-45a5057ee89f" />
+        <suppliersInternal>
+          <dependency Id="fa8abe88-6f9b-4957-a1f3-46fd750337ca">
+            <packageMoniker Id="78385373-ffab-4649-834a-5fcca9487eb2" LastKnownName="Modelo" />
+            <elementDefinition Id="efbddf79-243f-49f5-aa2b-d1f631471d86" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="78385373-ffab-4649-834a-5fcca9487eb2" name="Modelo">
+        <elementDefinition Id="89660028-dbb7-40f5-b934-ddbd02845e95" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="dced93c1-a106-4a1c-9bb0-f94d4b75c4bf" name="Controlador">
+        <elementDefinition Id="7f6323d9-d287-4f30-be0d-5e812e22ddd9" />
+        <suppliersInternal>
+          <dependency Id="0eaacf34-5cab-4653-ba2e-6e6b8e0df78b">
+            <packageMoniker Id="78385373-ffab-4649-834a-5fcca9487eb2" LastKnownName="Modelo" />
+            <elementDefinition Id="a142470e-aabc-40fd-834d-534b1e6f29e5" />
+          </dependency>
+          <dependency Id="0984d9a8-31a0-4780-b89e-75b8319fb0df">
+            <packageMoniker Id="d7f84ba3-b717-47e8-8425-2e4dfd0dd04e" LastKnownName="Vista" />
+            <elementDefinition Id="8d850b9f-4f37-4cae-ad72-04b8e637015b" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="41e73745-a68c-44a9-ac6f-3fb192e38a2a" name="Modeling">
+    <elementDefinition Id="54eadb30-814b-40ec-a796-4b93c0252ee2" />
+  </package>
+</logicalClassDesignerModel>

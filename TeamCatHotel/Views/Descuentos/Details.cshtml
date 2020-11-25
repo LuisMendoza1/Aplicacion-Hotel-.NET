@@ -1,0 +1,48 @@
+@model TeamCatHotel.Models.Descuento
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Descuento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaFin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaInicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fechaInicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.porcentaje)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.porcentaje)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idDescuento">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
